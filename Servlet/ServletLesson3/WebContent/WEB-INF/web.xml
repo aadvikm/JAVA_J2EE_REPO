@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<welcome-file-list>
+		<welcome-file>/views/customgooglesearch.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>CustomGoogleSearch</servlet-name>
+		<servlet-class>com.servletlesson3.CustomGoogleSearchServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CallingServlet</servlet-name>
+		<servlet-class>com.servletlesson3.CallingServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RedirectServlet</servlet-name>
+		<servlet-class>com.servletlesson3.RedirectServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DemoRedirect</servlet-name>
+		<jsp-file>/views/demoredirect.html</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CustomGoogleSearch</servlet-name>
+		<url-pattern>/customGoogleSearch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CallingServlet</servlet-name>
+		<url-pattern>/callingServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RedirectServlet</servlet-name>
+		<url-pattern>/redirectServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DemoRedirect</servlet-name>
+		<url-pattern>/demoRedirect</url-pattern>
+	</servlet-mapping>
+</web-app>

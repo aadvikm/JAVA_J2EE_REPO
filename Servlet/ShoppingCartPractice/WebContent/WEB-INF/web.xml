@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>/views/login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.shoppingcartpractice.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductPage</servlet-name>
+    <jsp-file>/views/productsubmission.html</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginFailPage</servlet-name>
+    <jsp-file>/views/loginFail.html</jsp-file>
+  </servlet>
+  <servlet>
+    <servlet-name>SubmitProduct</servlet-name>
+    <servlet-class>com.shoppingcartpractice.SubmitProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PlaceOrder</servlet-name>
+    <servlet-class>com.shoppingcartpractice.PlaceOrder</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.shoppingcartpractice.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductPage</servlet-name>
+    <url-pattern>/productPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginFailPage</servlet-name>
+    <url-pattern>/loginFailPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitProduct</servlet-name>
+    <url-pattern>/submitProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlaceOrder</servlet-name>
+    <url-pattern>/placeOrder</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

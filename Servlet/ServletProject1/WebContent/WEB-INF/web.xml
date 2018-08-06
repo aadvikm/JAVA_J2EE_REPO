@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<welcome-file-list>
+		<welcome-file>/views/login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.servletproject1.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SuccessServlet</servlet-name>
+		<servlet-class>com.servletproject1.SuccessServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SuccessResponse</servlet-name>
+		<servlet-class>com.servletproject1.SuccessResponse</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginFailServlet</servlet-name>
+		<jsp-file>/views/loginFail.html</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SuccessServlet</servlet-name>
+		<url-pattern>/successServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SuccessResponse</servlet-name>
+		<url-pattern>/successResponse</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginFailServlet</servlet-name>
+		<url-pattern>/loginFailServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
