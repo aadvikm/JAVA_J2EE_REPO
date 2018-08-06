@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product Submission Page</title>
+<script type="text/javascript">
+   alert("My First Alert");
+</script>
+<script type="text/javascript" src="js/productsubmission.js"></script>
+</head>
+<body>
+<h3>Hi  </h3>
+<form id="productSubmissionForm" name="productSubmissionForm" method="post" action="/StationaryPurchase/submitProduct">
+    <table style="width:50%">
+	<tr>
+		<td width="50%" align="center">Pen
+		</td>
+		<td width="15%" align="right">Quantity
+		</td>
+		<td width="10%">
+		<select id="penQuantity" name="penQuantity">
+        <option value="1" selected>One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    		</select>
+		</td>
+		<td width="15%" align="right">
+		Price
+		</td>
+		<td width="10%">
+		<input type="text" id="penPrice" name="penPrice" style="width:25px">
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" align="center">Pencil
+		</td>
+		<td width="15%" align="right">Quantity
+		</td>
+		<td width="10%">
+		<select id="pencilQuantity" name="pencilQuantity">
+        <option value="1">One</option>
+        <option value="2" selected>Two</option>
+        <option value="3">Three</option>
+    		</select>
+		</td>
+		<td width="15%" align="right">
+		Price
+		</td>
+		<td width="10%">
+		<input type="text" id="pencilPrice" name="pencilPrice" style="width:25px">
+		</td>
+	</tr>
+	<tr>
+		<td width="50%" align="center">Eraset
+		</td>
+		<td width="15%" align="right">Quantity
+		</td>
+		<td width="10%">
+		<select id="eraserQuantity" name="eraserQuantity">
+        <option value="1" selected>One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    		</select>
+		</td>
+		<td width="15%" align="right">
+		Price
+		</td>
+		<td width="10%">
+		<input type="text" id="eraserPrice" name="eraserPrice" style="width:25px">
+		</td>
+	</tr>
+	
+	<tr>
+	<td colspan='5' align="right"><input type="button" value="Reset" onclick="resetForm();">&nbsp;<input type="button" onclick="validateAndSubmit();" value="Proceed Purchase"></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
