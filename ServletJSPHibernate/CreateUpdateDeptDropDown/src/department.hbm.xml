@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping> 
+  <class name="com.deptcrud.dropdown.DepartmentEntity" table="DEPARTMENTS">  
+    <id name="deptId" column="DEPARTMENT_ID">  
+     <generator class="sequence">
+        <param name="sequence">DEPARTMENTS_SEQ</param>
+     </generator>  
+    </id>        
+    <property name="managerId" column="MANAGER_ID"></property>
+    <property name="deptName" column="DEPARTMENT_NAME"></property> 
+    <property name="locationId" column="LOCATION_ID"></property>
+  </class>  
+ </hibernate-mapping>  
