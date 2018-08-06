@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DepartmentCrudJSP</display-name>
+  <welcome-file-list>
+    <welcome-file>/views/login.jsp</welcome-file>
+  </welcome-file-list>
+  	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HomePage</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.HomePage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginFail</servlet-name>
+		<jsp-file>/views/login.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>CreateDept</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.CreateDept</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FindDept</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.FindDept</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateDept</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.UpdateDept</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteDept</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.DeleteDept</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.DepartmentCrudJSP.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HomePage</servlet-name>
+		<url-pattern>/homePage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>LoginFail</servlet-name>
+		<url-pattern>/loginFail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>CreateDept</servlet-name>
+		<url-pattern>/createDept</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FindDept</servlet-name>
+		<url-pattern>/findDept</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateDept</servlet-name>
+		<url-pattern>/updateDept</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteDept</servlet-name>
+		<url-pattern>/deleteDept</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logoutServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
+

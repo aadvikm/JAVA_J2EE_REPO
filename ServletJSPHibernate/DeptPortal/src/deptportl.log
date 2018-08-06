@@ -1,0 +1,2236 @@
+12:21:36,806  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+12:21:36,826  INFO Environment:500 - Hibernate 3.2.1
+12:21:36,836  INFO Environment:533 - hibernate.properties not found
+12:21:36,840  INFO Environment:667 - Bytecode provider name : cglib
+12:21:36,846  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+12:21:36,942  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+12:21:36,943  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+12:21:37,123  INFO Configuration:1538 - Configured SessionFactory: null
+12:21:37,192  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+12:21:37,193  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+12:21:37,193  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+12:21:37,245  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+12:21:37,246  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+12:21:37,894  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+12:21:37,894  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+12:21:37,926  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+12:21:38,001  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+12:21:38,006  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:21:38,007  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+12:21:38,008  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+12:21:38,010  INFO SettingsFactory:145 - JDBC batch size: 15
+12:21:38,011  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+12:21:38,014  INFO SettingsFactory:153 - Scrollable result sets: enabled
+12:21:38,015  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+12:21:38,016  INFO SettingsFactory:169 - Connection release mode: auto
+12:21:38,018  INFO SettingsFactory:196 - Default batch fetch size: 1
+12:21:38,019  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+12:21:38,020  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+12:21:38,023  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:21:38,030  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+12:21:38,031  INFO SettingsFactory:212 - Query language substitutions: {}
+12:21:38,033  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+12:21:38,033  INFO SettingsFactory:222 - Second-level cache: enabled
+12:21:38,034  INFO SettingsFactory:226 - Query cache: disabled
+12:21:38,035  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+12:21:38,036  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+12:21:38,037  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+12:21:38,049  INFO SettingsFactory:277 - Statistics: disabled
+12:21:38,050  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+12:21:38,052  INFO SettingsFactory:296 - Default entity-mode: pojo
+12:21:38,105  INFO SessionFactoryImpl:161 - building session factory
+12:21:38,111  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+12:21:38,117  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+12:21:38,118  INFO SchemaUpdate:126 - fetching database metadata
+12:21:38,286  INFO SchemaUpdate:138 - updating schema
+12:21:38,289  INFO SchemaUpdate:160 - schema update complete
+12:25:38,590  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+12:25:38,617  INFO Environment:500 - Hibernate 3.2.1
+12:25:38,625  INFO Environment:533 - hibernate.properties not found
+12:25:38,628  INFO Environment:667 - Bytecode provider name : cglib
+12:25:38,636  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+12:25:38,745  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+12:25:38,746  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+12:25:38,857  INFO Configuration:1538 - Configured SessionFactory: null
+12:25:38,921  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+12:25:38,922  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+12:25:38,923  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+12:25:38,979  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+12:25:38,982  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+12:25:39,592  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+12:25:39,592  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+12:25:39,629  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+12:25:39,698  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+12:25:39,709  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:25:39,713  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+12:25:39,735  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+12:25:39,740  INFO SettingsFactory:145 - JDBC batch size: 15
+12:25:39,742  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+12:25:39,747  INFO SettingsFactory:153 - Scrollable result sets: enabled
+12:25:39,750  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+12:25:39,752  INFO SettingsFactory:169 - Connection release mode: auto
+12:25:39,756  INFO SettingsFactory:196 - Default batch fetch size: 1
+12:25:39,758  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+12:25:39,759  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+12:25:39,763  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:25:39,772  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+12:25:39,773  INFO SettingsFactory:212 - Query language substitutions: {}
+12:25:39,774  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+12:25:39,777  INFO SettingsFactory:222 - Second-level cache: enabled
+12:25:39,780  INFO SettingsFactory:226 - Query cache: disabled
+12:25:39,781  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+12:25:39,785  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+12:25:39,786  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+12:25:39,809  INFO SettingsFactory:277 - Statistics: disabled
+12:25:39,813  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+12:25:39,828  INFO SettingsFactory:296 - Default entity-mode: pojo
+12:25:39,952  INFO SessionFactoryImpl:161 - building session factory
+12:25:39,974  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+12:25:39,995  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+12:25:39,999  INFO SchemaUpdate:126 - fetching database metadata
+12:25:40,243  INFO SchemaUpdate:138 - updating schema
+12:25:40,261  INFO SchemaUpdate:160 - schema update complete
+12:25:40,739 DEBUG LongType:80 - binding '1' to parameter: 1
+12:25:40,739 DEBUG LongType:80 - binding '5' to parameter: 2
+12:25:40,750  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+12:25:40,751 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+12:26:49,022  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+12:26:49,137  INFO Environment:500 - Hibernate 3.2.1
+12:26:49,142  INFO Environment:533 - hibernate.properties not found
+12:26:49,145  INFO Environment:667 - Bytecode provider name : cglib
+12:26:49,154  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+12:26:49,276  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+12:26:49,276  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+12:26:49,593  INFO Configuration:1538 - Configured SessionFactory: null
+12:26:49,673  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+12:26:49,673  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+12:26:49,674  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+12:26:49,719  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+12:26:49,720  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+12:26:50,398  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+12:26:50,398  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+12:26:50,445  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+12:26:50,519  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+12:26:50,525  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+12:26:50,525  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+12:26:50,526  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+12:26:50,527  INFO SettingsFactory:145 - JDBC batch size: 15
+12:26:50,528  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+12:26:50,530  INFO SettingsFactory:153 - Scrollable result sets: enabled
+12:26:50,531  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+12:26:50,532  INFO SettingsFactory:169 - Connection release mode: auto
+12:26:50,538  INFO SettingsFactory:196 - Default batch fetch size: 1
+12:26:50,538  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+12:26:50,540  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+12:26:50,541  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+12:26:50,549  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+12:26:50,550  INFO SettingsFactory:212 - Query language substitutions: {}
+12:26:50,551  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+12:26:50,555  INFO SettingsFactory:222 - Second-level cache: enabled
+12:26:50,557  INFO SettingsFactory:226 - Query cache: disabled
+12:26:50,557  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+12:26:50,558  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+12:26:50,561  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+12:26:50,573  INFO SettingsFactory:277 - Statistics: disabled
+12:26:50,574  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+12:26:50,576  INFO SettingsFactory:296 - Default entity-mode: pojo
+12:26:50,627  INFO SessionFactoryImpl:161 - building session factory
+12:26:50,637  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+12:26:50,644  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+12:26:50,644  INFO SchemaUpdate:126 - fetching database metadata
+12:26:50,761  INFO SchemaUpdate:138 - updating schema
+12:26:50,764  INFO SchemaUpdate:160 - schema update complete
+12:26:51,110 DEBUG LongType:80 - binding '1' to parameter: 1
+12:26:51,111 DEBUG LongType:80 - binding '5' to parameter: 2
+12:26:51,125  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+12:26:51,125 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+14:01:27,819  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+14:01:27,913  INFO Environment:500 - Hibernate 3.2.1
+14:01:27,919  INFO Environment:533 - hibernate.properties not found
+14:01:27,922  INFO Environment:667 - Bytecode provider name : cglib
+14:01:27,930  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+14:01:28,043  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+14:01:28,045  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+14:01:28,326  INFO Configuration:1538 - Configured SessionFactory: null
+14:01:28,397  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+14:01:28,398  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+14:01:28,400  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+14:01:28,445  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+14:01:28,446  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+14:01:29,075  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+14:01:29,076  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+14:01:29,122  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+14:01:29,205  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+14:01:29,209  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14:01:29,211  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+14:01:29,212  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+14:01:29,213  INFO SettingsFactory:145 - JDBC batch size: 15
+14:01:29,214  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+14:01:29,217  INFO SettingsFactory:153 - Scrollable result sets: enabled
+14:01:29,218  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+14:01:29,219  INFO SettingsFactory:169 - Connection release mode: auto
+14:01:29,224  INFO SettingsFactory:196 - Default batch fetch size: 1
+14:01:29,224  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+14:01:29,225  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+14:01:29,228  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14:01:29,233  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+14:01:29,234  INFO SettingsFactory:212 - Query language substitutions: {}
+14:01:29,235  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+14:01:29,235  INFO SettingsFactory:222 - Second-level cache: enabled
+14:01:29,236  INFO SettingsFactory:226 - Query cache: disabled
+14:01:29,237  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+14:01:29,242  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+14:01:29,242  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+14:01:29,253  INFO SettingsFactory:277 - Statistics: disabled
+14:01:29,253  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+14:01:29,255  INFO SettingsFactory:296 - Default entity-mode: pojo
+14:01:29,306  INFO SessionFactoryImpl:161 - building session factory
+14:01:29,315  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+14:01:29,320  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+14:01:29,321  INFO SchemaUpdate:126 - fetching database metadata
+14:01:29,427  INFO SchemaUpdate:138 - updating schema
+14:01:29,431  INFO SchemaUpdate:160 - schema update complete
+14:01:29,703 DEBUG LongType:80 - binding '1' to parameter: 1
+14:01:29,703 DEBUG LongType:80 - binding '3' to parameter: 2
+14:01:29,716  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+14:01:29,716 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+14:15:18,154  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+14:15:18,197  INFO Environment:500 - Hibernate 3.2.1
+14:15:18,210  INFO Environment:533 - hibernate.properties not found
+14:15:18,214  INFO Environment:667 - Bytecode provider name : cglib
+14:15:18,232  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+14:15:18,367  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+14:15:18,368  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+14:15:18,651  INFO Configuration:1538 - Configured SessionFactory: null
+14:15:18,713  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+14:15:18,714  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+14:15:18,714  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+14:15:18,756  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+14:15:18,756  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+14:15:19,386  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+14:15:19,387  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+14:15:19,425  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+14:15:19,489  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+14:15:19,494  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+14:15:19,495  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+14:15:19,496  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+14:15:19,497  INFO SettingsFactory:145 - JDBC batch size: 15
+14:15:19,497  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+14:15:19,499  INFO SettingsFactory:153 - Scrollable result sets: enabled
+14:15:19,500  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+14:15:19,502  INFO SettingsFactory:169 - Connection release mode: auto
+14:15:19,507  INFO SettingsFactory:196 - Default batch fetch size: 1
+14:15:19,507  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+14:15:19,508  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+14:15:19,508  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+14:15:19,515  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+14:15:19,515  INFO SettingsFactory:212 - Query language substitutions: {}
+14:15:19,516  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+14:15:19,520  INFO SettingsFactory:222 - Second-level cache: enabled
+14:15:19,522  INFO SettingsFactory:226 - Query cache: disabled
+14:15:19,526  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+14:15:19,527  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+14:15:19,528  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+14:15:19,538  INFO SettingsFactory:277 - Statistics: disabled
+14:15:19,538  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+14:15:19,541  INFO SettingsFactory:296 - Default entity-mode: pojo
+14:15:19,590  INFO SessionFactoryImpl:161 - building session factory
+14:15:19,599  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+14:15:19,605  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+14:15:19,606  INFO SchemaUpdate:126 - fetching database metadata
+14:15:19,708  INFO SchemaUpdate:138 - updating schema
+14:15:19,710  INFO SchemaUpdate:160 - schema update complete
+14:15:19,995 DEBUG LongType:80 - binding '1' to parameter: 1
+14:15:19,996 DEBUG LongType:80 - binding '3' to parameter: 2
+14:15:20,005  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+14:15:20,006 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+16:26:20,020  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+16:26:20,094  INFO Environment:500 - Hibernate 3.2.1
+16:26:20,112  INFO Environment:533 - hibernate.properties not found
+16:26:20,115  INFO Environment:667 - Bytecode provider name : cglib
+16:26:20,127  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+16:26:20,265  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:26:20,265  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:26:20,547  INFO Configuration:1538 - Configured SessionFactory: null
+16:26:20,611  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:26:20,612  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:26:20,612  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:26:20,649  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:26:20,649  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:26:21,252  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:26:21,253  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:26:21,294  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:26:21,360  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:26:21,364  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:26:21,364  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:26:21,365  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:26:21,365  INFO SettingsFactory:145 - JDBC batch size: 15
+16:26:21,366  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:26:21,367  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:26:21,368  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:26:21,368  INFO SettingsFactory:169 - Connection release mode: auto
+16:26:21,370  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:26:21,370  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:26:21,370  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:26:21,371  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:26:21,376  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:26:21,377  INFO SettingsFactory:212 - Query language substitutions: {}
+16:26:21,377  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:26:21,377  INFO SettingsFactory:222 - Second-level cache: enabled
+16:26:21,378  INFO SettingsFactory:226 - Query cache: disabled
+16:26:21,378  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:26:21,378  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:26:21,379  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:26:21,392  INFO SettingsFactory:277 - Statistics: disabled
+16:26:21,392  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:26:21,394  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:26:21,435  INFO SessionFactoryImpl:161 - building session factory
+16:26:21,443  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:26:21,449  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:26:21,450  INFO SchemaUpdate:126 - fetching database metadata
+16:26:21,548  INFO SchemaUpdate:138 - updating schema
+16:26:21,551  INFO SchemaUpdate:160 - schema update complete
+16:26:21,832 DEBUG LongType:80 - binding '1' to parameter: 1
+16:26:21,832 DEBUG LongType:80 - binding '3' to parameter: 2
+16:26:21,842  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+16:26:21,843 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+16:33:25,360  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:33:25,362  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:33:25,376  INFO Configuration:1538 - Configured SessionFactory: null
+16:33:25,377  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:33:25,378  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:33:25,378  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:33:25,378  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:33:25,379  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:33:25,403  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:33:25,404  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:33:25,405  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:33:25,406  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:33:25,406  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:33:25,407  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:33:25,407  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:33:25,407  INFO SettingsFactory:145 - JDBC batch size: 15
+16:33:25,408  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:33:25,408  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:33:25,409  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:33:25,409  INFO SettingsFactory:169 - Connection release mode: auto
+16:33:25,409  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:33:25,410  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:33:25,410  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:33:25,411  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:33:25,412  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:33:25,412  INFO SettingsFactory:212 - Query language substitutions: {}
+16:33:25,413  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:33:25,413  INFO SettingsFactory:222 - Second-level cache: enabled
+16:33:25,414  INFO SettingsFactory:226 - Query cache: disabled
+16:33:25,414  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:33:25,414  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:33:25,415  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:33:25,415  INFO SettingsFactory:277 - Statistics: disabled
+16:33:25,416  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:33:25,416  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:33:25,429  INFO SessionFactoryImpl:161 - building session factory
+16:33:25,430  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:33:25,430  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:33:25,431  INFO SchemaUpdate:126 - fetching database metadata
+16:33:25,434  INFO SchemaUpdate:138 - updating schema
+16:33:25,435  INFO SchemaUpdate:160 - schema update complete
+16:38:23,472  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:38:23,473  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:38:23,487  INFO Configuration:1538 - Configured SessionFactory: null
+16:38:23,488  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:38:23,488  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:38:23,489  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:38:23,489  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:38:23,490  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:38:23,517  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:38:23,519  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:38:23,519  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:38:23,521  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:38:23,522  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:38:23,524  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:38:23,527  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:38:23,528  INFO SettingsFactory:145 - JDBC batch size: 15
+16:38:23,529  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:38:23,532  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:38:23,534  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:38:23,535  INFO SettingsFactory:169 - Connection release mode: auto
+16:38:23,536  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:38:23,543  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:38:23,545  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:38:23,546  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:38:23,546  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:38:23,547  INFO SettingsFactory:212 - Query language substitutions: {}
+16:38:23,548  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:38:23,548  INFO SettingsFactory:222 - Second-level cache: enabled
+16:38:23,548  INFO SettingsFactory:226 - Query cache: disabled
+16:38:23,549  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:38:23,549  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:38:23,549  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:38:23,550  INFO SettingsFactory:277 - Statistics: disabled
+16:38:23,550  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:38:23,550  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:38:23,566  INFO SessionFactoryImpl:161 - building session factory
+16:38:23,567  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:38:23,568  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:38:23,569  INFO SchemaUpdate:126 - fetching database metadata
+16:38:23,572  INFO SchemaUpdate:138 - updating schema
+16:38:23,573  INFO SchemaUpdate:160 - schema update complete
+16:38:35,264  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:38:35,271  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:38:35,306  INFO Configuration:1538 - Configured SessionFactory: null
+16:38:35,317  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:38:35,322  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:38:35,323  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:38:35,325  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:38:35,326  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:38:35,390  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:38:35,394  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:38:35,396  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:38:35,398  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:38:35,399  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:38:35,399  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:38:35,400  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:38:35,401  INFO SettingsFactory:145 - JDBC batch size: 15
+16:38:35,401  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:38:35,401  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:38:35,402  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:38:35,406  INFO SettingsFactory:169 - Connection release mode: auto
+16:38:35,407  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:38:35,408  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:38:35,409  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:38:35,410  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:38:35,413  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:38:35,414  INFO SettingsFactory:212 - Query language substitutions: {}
+16:38:35,416  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:38:35,418  INFO SettingsFactory:222 - Second-level cache: enabled
+16:38:35,418  INFO SettingsFactory:226 - Query cache: disabled
+16:38:35,420  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:38:35,422  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:38:35,423  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:38:35,424  INFO SettingsFactory:277 - Statistics: disabled
+16:38:35,425  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:38:35,426  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:38:35,464  INFO SessionFactoryImpl:161 - building session factory
+16:38:35,466  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:38:35,467  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:38:35,468  INFO SchemaUpdate:126 - fetching database metadata
+16:38:35,471  INFO SchemaUpdate:138 - updating schema
+16:38:35,472  INFO SchemaUpdate:160 - schema update complete
+16:39:51,176  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:39:51,176  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:39:51,186  INFO Configuration:1538 - Configured SessionFactory: null
+16:39:51,187  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:39:51,187  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:39:51,188  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:39:51,188  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:39:51,188  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:39:51,215  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:39:51,216  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:39:51,217  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:39:51,218  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:39:51,218  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:39:51,219  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:39:51,219  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:39:51,219  INFO SettingsFactory:145 - JDBC batch size: 15
+16:39:51,220  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:39:51,220  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:39:51,220  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:39:51,221  INFO SettingsFactory:169 - Connection release mode: auto
+16:39:51,221  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:39:51,222  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:39:51,222  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:39:51,222  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:39:51,223  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:39:51,223  INFO SettingsFactory:212 - Query language substitutions: {}
+16:39:51,224  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:39:51,224  INFO SettingsFactory:222 - Second-level cache: enabled
+16:39:51,225  INFO SettingsFactory:226 - Query cache: disabled
+16:39:51,225  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:39:51,226  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:39:51,226  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:39:51,226  INFO SettingsFactory:277 - Statistics: disabled
+16:39:51,227  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:39:51,227  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:39:51,237  INFO SessionFactoryImpl:161 - building session factory
+16:39:51,238  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:39:51,238  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:39:51,238  INFO SchemaUpdate:126 - fetching database metadata
+16:39:51,240  INFO SchemaUpdate:138 - updating schema
+16:39:51,241  INFO SchemaUpdate:160 - schema update complete
+16:39:56,502  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:39:56,509  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:39:56,518  INFO Configuration:1538 - Configured SessionFactory: null
+16:39:56,520  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:39:56,524  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:39:56,526  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:39:56,532  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:39:56,534  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:39:56,569  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:39:56,569  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:39:56,570  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:39:56,571  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:39:56,571  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:39:56,572  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:39:56,573  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:39:56,574  INFO SettingsFactory:145 - JDBC batch size: 15
+16:39:56,574  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:39:56,575  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:39:56,575  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:39:56,576  INFO SettingsFactory:169 - Connection release mode: auto
+16:39:56,576  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:39:56,576  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:39:56,577  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:39:56,577  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:39:56,577  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:39:56,578  INFO SettingsFactory:212 - Query language substitutions: {}
+16:39:56,578  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:39:56,579  INFO SettingsFactory:222 - Second-level cache: enabled
+16:39:56,579  INFO SettingsFactory:226 - Query cache: disabled
+16:39:56,580  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:39:56,580  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:39:56,581  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:39:56,581  INFO SettingsFactory:277 - Statistics: disabled
+16:39:56,582  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:39:56,582  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:39:56,594  INFO SessionFactoryImpl:161 - building session factory
+16:39:56,594  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:39:56,595  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:39:56,595  INFO SchemaUpdate:126 - fetching database metadata
+16:39:56,597  INFO SchemaUpdate:138 - updating schema
+16:39:56,598  INFO SchemaUpdate:160 - schema update complete
+16:40:20,641  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+16:40:20,643 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+16:41:43,214  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+16:41:43,249  INFO Environment:500 - Hibernate 3.2.1
+16:41:43,257  INFO Environment:533 - hibernate.properties not found
+16:41:43,263  INFO Environment:667 - Bytecode provider name : cglib
+16:41:43,272  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+16:41:43,410  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:41:43,410  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:41:43,786  INFO Configuration:1538 - Configured SessionFactory: null
+16:41:43,884  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:41:43,885  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:41:43,886  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:41:43,950  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:41:43,951  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:41:44,939  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:41:44,939  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:41:44,984  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:41:45,066  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:41:45,072  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:41:45,073  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:41:45,073  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:41:45,074  INFO SettingsFactory:145 - JDBC batch size: 15
+16:41:45,075  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:41:45,077  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:41:45,078  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:41:45,079  INFO SettingsFactory:169 - Connection release mode: auto
+16:41:45,085  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:41:45,085  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:41:45,086  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:41:45,088  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:41:45,094  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:41:45,094  INFO SettingsFactory:212 - Query language substitutions: {}
+16:41:45,095  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:41:45,095  INFO SettingsFactory:222 - Second-level cache: enabled
+16:41:45,096  INFO SettingsFactory:226 - Query cache: disabled
+16:41:45,096  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:41:45,100  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:41:45,101  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:41:45,119  INFO SettingsFactory:277 - Statistics: disabled
+16:41:45,120  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:41:45,124  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:41:45,188  INFO SessionFactoryImpl:161 - building session factory
+16:41:45,202  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:41:45,211  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:41:45,214  INFO SchemaUpdate:126 - fetching database metadata
+16:41:45,348  INFO SchemaUpdate:138 - updating schema
+16:41:45,351  INFO SchemaUpdate:160 - schema update complete
+16:41:45,642  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+16:41:45,642 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+16:46:05,344  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+16:46:05,389  INFO Environment:500 - Hibernate 3.2.1
+16:46:05,397  INFO Environment:533 - hibernate.properties not found
+16:46:05,401  INFO Environment:667 - Bytecode provider name : cglib
+16:46:05,414  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+16:46:05,539  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+16:46:05,540  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+16:46:05,821  INFO Configuration:1538 - Configured SessionFactory: null
+16:46:05,883  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+16:46:05,884  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+16:46:05,885  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+16:46:05,925  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+16:46:05,926  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+16:46:06,804  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+16:46:06,806  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+16:46:06,887  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+16:46:06,957  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+16:46:06,964  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+16:46:06,964  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+16:46:06,965  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+16:46:06,966  INFO SettingsFactory:145 - JDBC batch size: 15
+16:46:06,966  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+16:46:06,968  INFO SettingsFactory:153 - Scrollable result sets: enabled
+16:46:06,968  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+16:46:06,969  INFO SettingsFactory:169 - Connection release mode: auto
+16:46:06,976  INFO SettingsFactory:196 - Default batch fetch size: 1
+16:46:06,976  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+16:46:06,977  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+16:46:06,979  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+16:46:06,985  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+16:46:06,986  INFO SettingsFactory:212 - Query language substitutions: {}
+16:46:06,987  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+16:46:06,987  INFO SettingsFactory:222 - Second-level cache: enabled
+16:46:06,988  INFO SettingsFactory:226 - Query cache: disabled
+16:46:06,988  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+16:46:06,990  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+16:46:06,991  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+16:46:07,005  INFO SettingsFactory:277 - Statistics: disabled
+16:46:07,005  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+16:46:07,007  INFO SettingsFactory:296 - Default entity-mode: pojo
+16:46:07,057  INFO SessionFactoryImpl:161 - building session factory
+16:46:07,066  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+16:46:07,073  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+16:46:07,073  INFO SchemaUpdate:126 - fetching database metadata
+16:46:07,182  INFO SchemaUpdate:138 - updating schema
+16:46:07,185  INFO SchemaUpdate:160 - schema update complete
+16:46:07,464  WARN JDBCExceptionReporter:77 - SQL Error: 933, SQLState: 42000
+16:46:07,465 ERROR JDBCExceptionReporter:78 - ORA-00933: SQL command not properly ended
+
+19:07:22,381  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:07:22,384  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:07:23,447  INFO Configuration:1538 - Configured SessionFactory: null
+19:07:23,449  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:07:23,450  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:07:23,451  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:07:23,452  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:07:23,453  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:07:23,520  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:07:23,522  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:07:23,522  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:07:23,523  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:07:23,524  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:07:23,525  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:07:23,525  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:07:23,526  INFO SettingsFactory:145 - JDBC batch size: 15
+19:07:23,527  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:07:23,527  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:07:23,528  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:07:23,528  INFO SettingsFactory:169 - Connection release mode: auto
+19:07:23,529  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:07:23,530  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:07:23,530  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:07:23,531  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:07:23,532  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:07:23,533  INFO SettingsFactory:212 - Query language substitutions: {}
+19:07:23,534  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:07:23,535  INFO SettingsFactory:222 - Second-level cache: enabled
+19:07:23,535  INFO SettingsFactory:226 - Query cache: disabled
+19:07:23,536  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:07:23,537  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:07:23,538  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:07:23,538  INFO SettingsFactory:277 - Statistics: disabled
+19:07:23,539  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:07:23,540  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:07:23,558  INFO SessionFactoryImpl:161 - building session factory
+19:07:23,559  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:07:23,560  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:07:23,561  INFO SchemaUpdate:126 - fetching database metadata
+19:07:23,564  INFO SchemaUpdate:138 - updating schema
+19:07:23,564  INFO SchemaUpdate:160 - schema update complete
+19:07:29,313 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:07:29,314 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:07:29,314 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:07:29,315 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:07:29,316 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:07:29,317 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:07:29,318 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:07:29,319 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:07:29,320 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:07:29,321 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:07:29,322 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:07:29,323 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:07:29,324 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:07:29,325 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:07:29,327 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:08:51,528  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:08:51,529  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:08:51,544  INFO Configuration:1538 - Configured SessionFactory: null
+19:08:51,546  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:08:51,546  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:08:51,547  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:08:51,548  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:08:51,549  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:08:51,582  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:08:51,583  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:08:51,584  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:08:51,585  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:08:51,586  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:08:51,586  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:08:51,587  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:08:51,588  INFO SettingsFactory:145 - JDBC batch size: 15
+19:08:51,588  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:08:51,589  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:08:51,589  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:08:51,590  INFO SettingsFactory:169 - Connection release mode: auto
+19:08:51,590  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:08:51,591  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:08:51,591  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:08:51,593  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:08:51,594  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:08:51,595  INFO SettingsFactory:212 - Query language substitutions: {}
+19:08:51,596  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:08:51,596  INFO SettingsFactory:222 - Second-level cache: enabled
+19:08:51,597  INFO SettingsFactory:226 - Query cache: disabled
+19:08:51,598  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:08:51,599  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:08:51,600  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:08:51,600  INFO SettingsFactory:277 - Statistics: disabled
+19:08:51,601  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:08:51,601  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:08:51,619  INFO SessionFactoryImpl:161 - building session factory
+19:08:51,620  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:08:51,621  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:08:51,621  INFO SchemaUpdate:126 - fetching database metadata
+19:08:51,627  INFO SchemaUpdate:138 - updating schema
+19:08:51,632  INFO SchemaUpdate:160 - schema update complete
+19:08:51,635 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:08:51,636 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:08:51,636 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:08:51,637 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:08:51,638 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:08:51,638 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:08:51,639 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:08:51,639 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:08:51,640 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:08:51,641 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:08:51,642 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:08:51,643 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:08:51,644 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:08:51,645 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:08:51,646 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:10:31,393  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:10:31,393  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:10:31,440  INFO Configuration:1538 - Configured SessionFactory: null
+19:10:31,442  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:10:31,446  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:10:31,447  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:10:31,448  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:10:31,448  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:10:31,487  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:10:31,491  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:10:31,492  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:10:31,494  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:10:31,494  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:10:31,494  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:10:31,495  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:10:31,495  INFO SettingsFactory:145 - JDBC batch size: 15
+19:10:31,495  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:10:31,496  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:10:31,496  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:10:31,496  INFO SettingsFactory:169 - Connection release mode: auto
+19:10:31,497  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:10:31,497  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:10:31,498  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:10:31,498  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:10:31,499  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:10:31,499  INFO SettingsFactory:212 - Query language substitutions: {}
+19:10:31,499  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:10:31,500  INFO SettingsFactory:222 - Second-level cache: enabled
+19:10:31,502  INFO SettingsFactory:226 - Query cache: disabled
+19:10:31,503  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:10:31,504  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:10:31,505  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:10:31,505  INFO SettingsFactory:277 - Statistics: disabled
+19:10:31,506  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:10:31,508  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:10:31,535  INFO SessionFactoryImpl:161 - building session factory
+19:10:31,539  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:10:31,540  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:10:31,541  INFO SchemaUpdate:126 - fetching database metadata
+19:10:31,545  INFO SchemaUpdate:138 - updating schema
+19:10:31,545  INFO SchemaUpdate:160 - schema update complete
+19:10:31,547 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:10:31,548 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:10:31,549 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:10:31,549 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:10:31,550 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:10:31,550 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:10:31,551 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:10:31,551 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:10:31,552 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:10:31,553 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:10:31,553 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:10:31,554 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:10:31,554 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:10:31,555 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:10:31,555 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:10:36,389  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:10:36,390  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:10:36,401  INFO Configuration:1538 - Configured SessionFactory: null
+19:10:36,402  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:10:36,403  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:10:36,403  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:10:36,404  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:10:36,405  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:10:36,428  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:10:36,428  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:10:36,429  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:10:36,430  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:10:36,431  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:10:36,433  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:10:36,434  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:10:36,434  INFO SettingsFactory:145 - JDBC batch size: 15
+19:10:36,435  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:10:36,435  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:10:36,435  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:10:36,436  INFO SettingsFactory:169 - Connection release mode: auto
+19:10:36,436  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:10:36,436  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:10:36,437  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:10:36,437  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:10:36,438  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:10:36,439  INFO SettingsFactory:212 - Query language substitutions: {}
+19:10:36,439  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:10:36,440  INFO SettingsFactory:222 - Second-level cache: enabled
+19:10:36,440  INFO SettingsFactory:226 - Query cache: disabled
+19:10:36,440  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:10:36,441  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:10:36,441  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:10:36,442  INFO SettingsFactory:277 - Statistics: disabled
+19:10:36,443  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:10:36,443  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:10:36,454  INFO SessionFactoryImpl:161 - building session factory
+19:10:36,455  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:10:36,456  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:10:36,456  INFO SchemaUpdate:126 - fetching database metadata
+19:10:36,458  INFO SchemaUpdate:138 - updating schema
+19:10:36,458  INFO SchemaUpdate:160 - schema update complete
+19:10:36,516 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:10:36,517 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:10:36,517 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:10:36,518 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:10:36,518 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:10:36,518 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:10:36,519 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:10:36,519 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:10:36,519 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:10:36,519 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:10:36,520 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:10:36,520 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:10:36,520 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:10:36,520 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:10:36,521 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:20,371  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:11:20,372  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:11:20,382  INFO Configuration:1538 - Configured SessionFactory: null
+19:11:20,383  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:11:20,383  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:11:20,384  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:11:20,384  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:11:20,384  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:11:20,411  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:11:20,411  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:11:20,412  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:11:20,412  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:11:20,413  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:11:20,413  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:11:20,413  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:11:20,414  INFO SettingsFactory:145 - JDBC batch size: 15
+19:11:20,414  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:11:20,414  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:11:20,414  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:11:20,415  INFO SettingsFactory:169 - Connection release mode: auto
+19:11:20,415  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:11:20,415  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:11:20,415  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:11:20,416  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:11:20,416  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:11:20,416  INFO SettingsFactory:212 - Query language substitutions: {}
+19:11:20,416  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:11:20,417  INFO SettingsFactory:222 - Second-level cache: enabled
+19:11:20,417  INFO SettingsFactory:226 - Query cache: disabled
+19:11:20,417  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:11:20,417  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:11:20,417  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:11:20,418  INFO SettingsFactory:277 - Statistics: disabled
+19:11:20,418  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:11:20,418  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:11:20,430  INFO SessionFactoryImpl:161 - building session factory
+19:11:20,430  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:11:20,430  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:11:20,430  INFO SchemaUpdate:126 - fetching database metadata
+19:11:20,432  INFO SchemaUpdate:138 - updating schema
+19:11:20,432  INFO SchemaUpdate:160 - schema update complete
+19:11:20,434 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:11:20,434 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:11:20,434 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:11:20,434 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:20,435 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:11:20,435 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:11:20,436 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:11:20,436 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:11:20,436 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:20,437 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:11:20,437 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:11:20,437 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:11:20,437 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:11:20,438 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:20,438 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:31,459  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:11:31,460  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:11:31,467  INFO Configuration:1538 - Configured SessionFactory: null
+19:11:31,468  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:11:31,472  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:11:31,473  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:11:31,474  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:11:31,475  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:11:31,559  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:11:31,560  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:11:31,560  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:11:31,561  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:11:31,561  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:11:31,561  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:11:31,562  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:11:31,562  INFO SettingsFactory:145 - JDBC batch size: 15
+19:11:31,562  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:11:31,562  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:11:31,563  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:11:31,563  INFO SettingsFactory:169 - Connection release mode: auto
+19:11:31,563  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:11:31,563  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:11:31,564  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:11:31,564  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:11:31,564  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:11:31,564  INFO SettingsFactory:212 - Query language substitutions: {}
+19:11:31,565  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:11:31,565  INFO SettingsFactory:222 - Second-level cache: enabled
+19:11:31,565  INFO SettingsFactory:226 - Query cache: disabled
+19:11:31,565  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:11:31,565  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:11:31,566  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:11:31,566  INFO SettingsFactory:277 - Statistics: disabled
+19:11:31,566  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:11:31,566  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:11:31,575  INFO SessionFactoryImpl:161 - building session factory
+19:11:31,576  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:11:31,576  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:11:31,576  INFO SchemaUpdate:126 - fetching database metadata
+19:11:31,578  INFO SchemaUpdate:138 - updating schema
+19:11:31,578  INFO SchemaUpdate:160 - schema update complete
+19:11:31,580 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:11:31,580 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:11:31,581 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:11:31,581 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:31,581 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:31,582 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:11:31,582 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:11:31,582 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:11:31,583 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:31,583 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:31,584 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:11:31,584 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:11:31,585 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:11:31,585 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:31,586 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:44,547  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:11:44,549  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:11:44,556  INFO Configuration:1538 - Configured SessionFactory: null
+19:11:44,558  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:11:44,558  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:11:44,559  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:11:44,561  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:11:44,562  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:11:44,639  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:11:44,639  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:11:44,641  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:11:44,641  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:11:44,643  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:11:44,644  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:11:44,645  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:11:44,645  INFO SettingsFactory:145 - JDBC batch size: 15
+19:11:44,645  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:11:44,646  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:11:44,646  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:11:44,646  INFO SettingsFactory:169 - Connection release mode: auto
+19:11:44,647  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:11:44,647  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:11:44,647  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:11:44,647  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:11:44,648  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:11:44,648  INFO SettingsFactory:212 - Query language substitutions: {}
+19:11:44,648  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:11:44,649  INFO SettingsFactory:222 - Second-level cache: enabled
+19:11:44,649  INFO SettingsFactory:226 - Query cache: disabled
+19:11:44,649  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:11:44,650  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:11:44,650  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:11:44,650  INFO SettingsFactory:277 - Statistics: disabled
+19:11:44,651  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:11:44,651  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:11:44,671  INFO SessionFactoryImpl:161 - building session factory
+19:11:44,671  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:11:44,672  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:11:44,673  INFO SchemaUpdate:126 - fetching database metadata
+19:11:44,675  INFO SchemaUpdate:138 - updating schema
+19:11:44,676  INFO SchemaUpdate:160 - schema update complete
+19:11:44,679 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:11:44,679 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:11:44,679 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:11:44,680 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:44,680 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:44,681 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:11:44,681 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:11:44,681 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:11:44,682 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:44,682 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:11:44,683 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:11:44,684 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:11:44,684 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:11:44,685 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:11:44,685 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:39,209  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:12:39,213  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:12:39,227  INFO Configuration:1538 - Configured SessionFactory: null
+19:12:39,233  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:12:39,236  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:12:39,239  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:12:39,239  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:12:39,240  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:12:39,305  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:12:39,307  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:12:39,309  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:12:39,314  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:12:39,314  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:12:39,315  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:12:39,316  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:12:39,317  INFO SettingsFactory:145 - JDBC batch size: 15
+19:12:39,323  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:12:39,324  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:12:39,324  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:12:39,325  INFO SettingsFactory:169 - Connection release mode: auto
+19:12:39,326  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:12:39,326  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:12:39,327  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:12:39,330  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:12:39,333  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:12:39,335  INFO SettingsFactory:212 - Query language substitutions: {}
+19:12:39,335  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:12:39,336  INFO SettingsFactory:222 - Second-level cache: enabled
+19:12:39,337  INFO SettingsFactory:226 - Query cache: disabled
+19:12:39,337  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:12:39,338  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:12:39,339  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:12:39,341  INFO SettingsFactory:277 - Statistics: disabled
+19:12:39,345  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:12:39,346  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:12:39,365  INFO SessionFactoryImpl:161 - building session factory
+19:12:39,368  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:12:39,369  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:12:39,370  INFO SchemaUpdate:126 - fetching database metadata
+19:12:39,377  INFO SchemaUpdate:138 - updating schema
+19:12:39,378  INFO SchemaUpdate:160 - schema update complete
+19:12:39,381 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:12:39,383 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:12:39,384 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:12:39,385 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:39,385 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:39,386 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:12:39,389 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:12:39,393 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:12:39,394 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:39,394 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:39,395 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:12:39,396 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:12:39,398 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:12:39,401 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:39,405 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:42,198  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:12:42,198  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:12:42,211  INFO Configuration:1538 - Configured SessionFactory: null
+19:12:42,212  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:12:42,212  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:12:42,216  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:12:42,217  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:12:42,218  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:12:42,304  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:12:42,304  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:12:42,306  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:12:42,310  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:12:42,310  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:12:42,311  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:12:42,311  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:12:42,312  INFO SettingsFactory:145 - JDBC batch size: 15
+19:12:42,313  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:12:42,313  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:12:42,314  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:12:42,319  INFO SettingsFactory:169 - Connection release mode: auto
+19:12:42,320  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:12:42,320  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:12:42,320  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:12:42,321  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:12:42,321  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:12:42,322  INFO SettingsFactory:212 - Query language substitutions: {}
+19:12:42,323  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:12:42,325  INFO SettingsFactory:222 - Second-level cache: enabled
+19:12:42,327  INFO SettingsFactory:226 - Query cache: disabled
+19:12:42,330  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:12:42,331  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:12:42,332  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:12:42,332  INFO SettingsFactory:277 - Statistics: disabled
+19:12:42,333  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:12:42,333  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:12:42,345  INFO SessionFactoryImpl:161 - building session factory
+19:12:42,345  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:12:42,346  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:12:42,348  INFO SchemaUpdate:126 - fetching database metadata
+19:12:42,350  INFO SchemaUpdate:138 - updating schema
+19:12:42,353  INFO SchemaUpdate:160 - schema update complete
+19:12:42,354 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:12:42,355 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:12:42,356 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:12:42,359 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:42,359 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:12:42,364 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:12:42,364 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:12:42,365 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:12:42,365 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:42,365 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:12:42,366 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:12:42,366 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:12:42,367 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:12:42,367 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:42,367 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:45,495  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:12:45,495  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:12:45,503  INFO Configuration:1538 - Configured SessionFactory: null
+19:12:45,503  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:12:45,504  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:12:45,504  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:12:45,506  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:12:45,507  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:12:45,678  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:12:45,679  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:12:45,681  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:12:45,685  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:12:45,686  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:12:45,686  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:12:45,686  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:12:45,687  INFO SettingsFactory:145 - JDBC batch size: 15
+19:12:45,687  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:12:45,689  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:12:45,693  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:12:45,694  INFO SettingsFactory:169 - Connection release mode: auto
+19:12:45,694  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:12:45,695  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:12:45,695  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:12:45,696  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:12:45,696  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:12:45,697  INFO SettingsFactory:212 - Query language substitutions: {}
+19:12:45,697  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:12:45,698  INFO SettingsFactory:222 - Second-level cache: enabled
+19:12:45,702  INFO SettingsFactory:226 - Query cache: disabled
+19:12:45,704  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:12:45,704  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:12:45,705  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:12:45,705  INFO SettingsFactory:277 - Statistics: disabled
+19:12:45,706  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:12:45,706  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:12:45,718  INFO SessionFactoryImpl:161 - building session factory
+19:12:45,718  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:12:45,719  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:12:45,719  INFO SchemaUpdate:126 - fetching database metadata
+19:12:45,722  INFO SchemaUpdate:138 - updating schema
+19:12:45,722  INFO SchemaUpdate:160 - schema update complete
+19:12:45,749 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:12:45,750 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:12:45,751 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:12:45,756 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:45,756 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:45,757 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:12:45,757 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:12:45,758 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:12:45,758 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:45,759 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:12:45,759 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:12:45,759 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:12:45,762 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:12:45,765 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:12:45,766 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:18:08,946  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:18:08,947  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:18:08,966  INFO Configuration:1538 - Configured SessionFactory: null
+19:18:08,967  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:18:08,968  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:18:08,974  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:18:08,974  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:18:08,975  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:18:09,000  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:18:09,003  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:18:09,003  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:18:09,008  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:18:09,008  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:18:09,009  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:18:09,009  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:18:09,010  INFO SettingsFactory:145 - JDBC batch size: 15
+19:18:09,010  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:18:09,013  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:18:09,017  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:18:09,018  INFO SettingsFactory:169 - Connection release mode: auto
+19:18:09,018  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:18:09,019  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:18:09,019  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:18:09,020  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:18:09,021  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:18:09,021  INFO SettingsFactory:212 - Query language substitutions: {}
+19:18:09,022  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:18:09,028  INFO SettingsFactory:222 - Second-level cache: enabled
+19:18:09,028  INFO SettingsFactory:226 - Query cache: disabled
+19:18:09,029  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:18:09,029  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:18:09,029  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:18:09,030  INFO SettingsFactory:277 - Statistics: disabled
+19:18:09,030  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:18:09,031  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:18:09,043  INFO SessionFactoryImpl:161 - building session factory
+19:18:09,043  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:18:09,045  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:18:09,046  INFO SchemaUpdate:126 - fetching database metadata
+19:18:09,052  INFO SchemaUpdate:138 - updating schema
+19:18:09,052  INFO SchemaUpdate:160 - schema update complete
+19:18:09,054 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:18:09,055 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:18:09,056 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:18:09,060 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:18:09,060 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:18:09,061 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:18:09,062 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:18:09,062 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:18:09,063 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:18:09,063 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:18:09,067 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:18:09,069 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:18:09,070 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:18:09,070 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:18:09,071 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:18:26,680  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:18:26,689  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:18:26,703  INFO Configuration:1538 - Configured SessionFactory: null
+19:18:26,713  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:18:26,715  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:18:26,719  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:18:26,719  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:18:26,720  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:18:26,830  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:18:26,831  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:18:26,833  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:18:26,837  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:18:26,838  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:18:26,839  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:18:26,839  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:18:26,840  INFO SettingsFactory:145 - JDBC batch size: 15
+19:18:26,841  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:18:26,841  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:18:26,848  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:18:26,849  INFO SettingsFactory:169 - Connection release mode: auto
+19:18:26,849  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:18:26,850  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:18:26,850  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:18:26,851  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:18:26,851  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:18:26,852  INFO SettingsFactory:212 - Query language substitutions: {}
+19:18:26,853  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:18:26,853  INFO SettingsFactory:222 - Second-level cache: enabled
+19:18:26,857  INFO SettingsFactory:226 - Query cache: disabled
+19:18:26,860  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:18:26,861  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:18:26,861  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:18:26,862  INFO SettingsFactory:277 - Statistics: disabled
+19:18:26,863  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:18:26,863  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:18:26,880  INFO SessionFactoryImpl:161 - building session factory
+19:18:26,881  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:18:26,883  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:18:26,884  INFO SchemaUpdate:126 - fetching database metadata
+19:18:26,891  INFO SchemaUpdate:138 - updating schema
+19:18:26,891  INFO SchemaUpdate:160 - schema update complete
+19:18:26,894 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:18:26,896 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:18:26,900 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:18:26,901 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:18:26,901 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:18:26,902 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:18:26,903 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:18:26,903 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:18:26,905 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:18:26,906 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:18:26,909 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:18:26,913 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:18:26,913 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:18:26,914 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:18:26,915 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:19:12,637  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:19:12,637  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:19:12,647  INFO Configuration:1538 - Configured SessionFactory: null
+19:19:12,648  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:19:12,648  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:19:12,653  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:19:12,654  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:19:12,654  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:19:12,864  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:19:12,871  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:19:12,872  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:19:12,876  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:19:12,876  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:19:12,877  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:19:12,877  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:19:12,878  INFO SettingsFactory:145 - JDBC batch size: 15
+19:19:12,878  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:19:12,881  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:19:12,883  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:19:12,884  INFO SettingsFactory:169 - Connection release mode: auto
+19:19:12,884  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:19:12,885  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:19:12,885  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:19:12,886  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:19:12,886  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:19:12,887  INFO SettingsFactory:212 - Query language substitutions: {}
+19:19:12,887  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:19:12,888  INFO SettingsFactory:222 - Second-level cache: enabled
+19:19:12,889  INFO SettingsFactory:226 - Query cache: disabled
+19:19:12,889  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:19:12,892  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:19:12,895  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:19:12,896  INFO SettingsFactory:277 - Statistics: disabled
+19:19:12,896  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:19:12,898  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:19:12,908  INFO SessionFactoryImpl:161 - building session factory
+19:19:12,908  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:19:12,909  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:19:12,913  INFO SchemaUpdate:126 - fetching database metadata
+19:19:12,916  INFO SchemaUpdate:138 - updating schema
+19:19:12,919  INFO SchemaUpdate:160 - schema update complete
+19:19:12,921 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:19:12,921 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:19:12,922 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:19:12,923 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:19:12,924 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:19:12,925 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:19:12,929 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:19:12,930 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:19:12,931 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:19:12,931 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:19:12,932 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:19:12,933 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:19:12,935 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:19:12,939 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:19:12,939 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:20,555  INFO Version:15 - Hibernate Annotations 3.2.0.GA
+19:44:20,590  INFO Environment:500 - Hibernate 3.2.1
+19:44:20,598  INFO Environment:533 - hibernate.properties not found
+19:44:20,602  INFO Environment:667 - Bytecode provider name : cglib
+19:44:20,613  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+19:44:20,725  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:44:20,726  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:44:20,998  INFO Configuration:1538 - Configured SessionFactory: null
+19:44:21,061  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:44:21,061  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:44:21,063  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:44:21,126  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:44:21,127  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:44:21,915  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:44:21,915  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:44:21,949  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:44:22,044  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:44:22,051  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:44:22,051  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:44:22,052  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:44:22,053  INFO SettingsFactory:145 - JDBC batch size: 15
+19:44:22,054  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:44:22,058  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:44:22,058  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:44:22,061  INFO SettingsFactory:169 - Connection release mode: auto
+19:44:22,063  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:44:22,066  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:44:22,067  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:44:22,068  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:44:22,076  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:44:22,077  INFO SettingsFactory:212 - Query language substitutions: {}
+19:44:22,078  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:44:22,082  INFO SettingsFactory:222 - Second-level cache: enabled
+19:44:22,083  INFO SettingsFactory:226 - Query cache: disabled
+19:44:22,083  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:44:22,084  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:44:22,085  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:44:22,094  INFO SettingsFactory:277 - Statistics: disabled
+19:44:22,096  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:44:22,099  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:44:22,156  INFO SessionFactoryImpl:161 - building session factory
+19:44:22,166  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:44:22,173  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:44:22,174  INFO SchemaUpdate:126 - fetching database metadata
+19:44:22,355  INFO SchemaUpdate:138 - updating schema
+19:44:22,364  INFO SchemaUpdate:160 - schema update complete
+19:44:22,890 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:44:22,891 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:44:22,894 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:44:22,898 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:22,902 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:22,903 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:44:22,904 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:44:22,908 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:44:22,909 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:22,910 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:22,913 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:44:22,914 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:44:22,918 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:44:22,919 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:22,920 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:56,519  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:44:56,522  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:44:56,558  INFO Configuration:1538 - Configured SessionFactory: null
+19:44:56,559  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:44:56,560  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:44:56,565  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:44:56,565  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:44:56,566  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:44:56,591  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:44:56,592  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:44:56,594  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:44:56,599  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:44:56,600  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:44:56,601  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:44:56,601  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:44:56,601  INFO SettingsFactory:145 - JDBC batch size: 15
+19:44:56,602  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:44:56,602  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:44:56,605  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:44:56,609  INFO SettingsFactory:169 - Connection release mode: auto
+19:44:56,609  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:44:56,609  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:44:56,610  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:44:56,610  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:44:56,611  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:44:56,612  INFO SettingsFactory:212 - Query language substitutions: {}
+19:44:56,613  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:44:56,614  INFO SettingsFactory:222 - Second-level cache: enabled
+19:44:56,617  INFO SettingsFactory:226 - Query cache: disabled
+19:44:56,620  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:44:56,621  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:44:56,622  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:44:56,623  INFO SettingsFactory:277 - Statistics: disabled
+19:44:56,624  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:44:56,625  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:44:56,640  INFO SessionFactoryImpl:161 - building session factory
+19:44:56,641  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:44:56,642  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:44:56,643  INFO SchemaUpdate:126 - fetching database metadata
+19:44:56,650  INFO SchemaUpdate:138 - updating schema
+19:44:56,652  INFO SchemaUpdate:160 - schema update complete
+19:44:56,655 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:44:56,656 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:44:56,658 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:44:56,658 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:56,659 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:56,660 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:44:56,661 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:44:56,666 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:44:56,667 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:56,668 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:56,671 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:44:56,671 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:44:56,673 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:44:56,674 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:56,678 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:44:59,307  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:44:59,308  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:44:59,315  INFO Configuration:1538 - Configured SessionFactory: null
+19:44:59,316  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:44:59,317  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:44:59,319  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:44:59,321  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:44:59,324  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:44:59,354  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:44:59,354  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:44:59,355  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:44:59,357  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:44:59,358  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:44:59,359  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:44:59,363  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:44:59,364  INFO SettingsFactory:145 - JDBC batch size: 15
+19:44:59,364  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:44:59,365  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:44:59,365  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:44:59,366  INFO SettingsFactory:169 - Connection release mode: auto
+19:44:59,366  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:44:59,369  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:44:59,373  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:44:59,374  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:44:59,374  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:44:59,375  INFO SettingsFactory:212 - Query language substitutions: {}
+19:44:59,375  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:44:59,376  INFO SettingsFactory:222 - Second-level cache: enabled
+19:44:59,376  INFO SettingsFactory:226 - Query cache: disabled
+19:44:59,377  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:44:59,378  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:44:59,378  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:44:59,384  INFO SettingsFactory:277 - Statistics: disabled
+19:44:59,384  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:44:59,385  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:44:59,403  INFO SessionFactoryImpl:161 - building session factory
+19:44:59,405  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:44:59,408  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:44:59,410  INFO SchemaUpdate:126 - fetching database metadata
+19:44:59,415  INFO SchemaUpdate:138 - updating schema
+19:44:59,418  INFO SchemaUpdate:160 - schema update complete
+19:44:59,421 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:44:59,423 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:44:59,423 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:44:59,424 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:59,424 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:44:59,425 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:44:59,425 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:44:59,427 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:44:59,431 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:59,431 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:44:59,432 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:44:59,432 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:44:59,433 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:44:59,433 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:44:59,434 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:02,959  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:45:02,960  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:45:02,977  INFO Configuration:1538 - Configured SessionFactory: null
+19:45:02,983  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:45:02,984  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:45:02,986  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:45:02,990  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:45:02,992  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:45:03,023  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:45:03,047  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:45:03,049  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:45:03,053  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:45:03,054  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:45:03,057  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:45:03,058  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:45:03,063  INFO SettingsFactory:145 - JDBC batch size: 15
+19:45:03,063  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:45:03,064  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:45:03,064  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:45:03,065  INFO SettingsFactory:169 - Connection release mode: auto
+19:45:03,068  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:45:03,072  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:45:03,073  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:45:03,074  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:45:03,074  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:45:03,075  INFO SettingsFactory:212 - Query language substitutions: {}
+19:45:03,076  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:45:03,076  INFO SettingsFactory:222 - Second-level cache: enabled
+19:45:03,079  INFO SettingsFactory:226 - Query cache: disabled
+19:45:03,083  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:45:03,084  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:45:03,084  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:45:03,085  INFO SettingsFactory:277 - Statistics: disabled
+19:45:03,085  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:45:03,086  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:45:03,099  INFO SessionFactoryImpl:161 - building session factory
+19:45:03,100  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:45:03,102  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:45:03,102  INFO SchemaUpdate:126 - fetching database metadata
+19:45:03,109  INFO SchemaUpdate:138 - updating schema
+19:45:03,110  INFO SchemaUpdate:160 - schema update complete
+19:45:03,114 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:45:03,115 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:45:03,118 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:45:03,118 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:03,119 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:03,121 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:45:03,125 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:45:03,126 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:45:03,127 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:03,128 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:03,128 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:45:03,129 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:45:03,130 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:45:03,131 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:03,135 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:18,458  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:45:18,458  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:45:18,467  INFO Configuration:1538 - Configured SessionFactory: null
+19:45:18,467  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:45:18,468  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:45:18,468  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:45:18,471  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:45:18,472  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:45:18,501  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:45:18,502  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:45:18,505  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:45:18,508  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:45:18,509  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:45:18,509  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:45:18,510  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:45:18,510  INFO SettingsFactory:145 - JDBC batch size: 15
+19:45:18,511  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:45:18,511  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:45:18,511  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:45:18,512  INFO SettingsFactory:169 - Connection release mode: auto
+19:45:18,512  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:45:18,513  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:45:18,519  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:45:18,519  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:45:18,520  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:45:18,520  INFO SettingsFactory:212 - Query language substitutions: {}
+19:45:18,521  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:45:18,522  INFO SettingsFactory:222 - Second-level cache: enabled
+19:45:18,522  INFO SettingsFactory:226 - Query cache: disabled
+19:45:18,523  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:45:18,523  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:45:18,524  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:45:18,526  INFO SettingsFactory:277 - Statistics: disabled
+19:45:18,530  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:45:18,530  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:45:18,539  INFO SessionFactoryImpl:161 - building session factory
+19:45:18,539  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:45:18,540  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:45:18,541  INFO SchemaUpdate:126 - fetching database metadata
+19:45:18,543  INFO SchemaUpdate:138 - updating schema
+19:45:18,543  INFO SchemaUpdate:160 - schema update complete
+19:45:18,545 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:45:18,546 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:45:18,547 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:45:18,551 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:18,552 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:45:18,552 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:45:18,553 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:45:18,554 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:45:18,555 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:18,557 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:45:18,560 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:45:18,561 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:45:18,561 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:45:18,562 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:18,563 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:20,720  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:45:20,723  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:45:20,732  INFO Configuration:1538 - Configured SessionFactory: null
+19:45:20,736  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:45:20,737  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:45:20,740  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:45:20,741  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:45:20,742  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:45:20,784  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:45:20,784  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:45:20,786  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:45:20,791  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:45:20,791  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:45:20,792  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:45:20,792  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:45:20,793  INFO SettingsFactory:145 - JDBC batch size: 15
+19:45:20,793  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:45:20,796  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:45:20,800  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:45:20,800  INFO SettingsFactory:169 - Connection release mode: auto
+19:45:20,801  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:45:20,801  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:45:20,802  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:45:20,802  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:45:20,803  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:45:20,804  INFO SettingsFactory:212 - Query language substitutions: {}
+19:45:20,804  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:45:20,805  INFO SettingsFactory:222 - Second-level cache: enabled
+19:45:20,811  INFO SettingsFactory:226 - Query cache: disabled
+19:45:20,811  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:45:20,812  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:45:20,812  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:45:20,813  INFO SettingsFactory:277 - Statistics: disabled
+19:45:20,813  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:45:20,814  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:45:20,828  INFO SessionFactoryImpl:161 - building session factory
+19:45:20,829  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:45:20,831  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:45:20,836  INFO SchemaUpdate:126 - fetching database metadata
+19:45:20,840  INFO SchemaUpdate:138 - updating schema
+19:45:20,841  INFO SchemaUpdate:160 - schema update complete
+19:45:20,844 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:45:20,846 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:45:20,847 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:45:20,847 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:20,848 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:20,848 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:45:20,851 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:45:20,855 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:45:20,856 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:20,856 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:20,857 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:45:20,858 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:45:20,858 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:45:20,859 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:20,859 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:22,176  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:45:22,179  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:45:22,196  INFO Configuration:1538 - Configured SessionFactory: null
+19:45:22,197  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:45:22,199  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:45:22,207  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:45:22,207  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:45:22,208  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:45:22,237  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:45:22,239  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:45:22,241  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:45:22,246  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:45:22,246  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:45:22,247  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:45:22,247  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:45:22,248  INFO SettingsFactory:145 - JDBC batch size: 15
+19:45:22,248  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:45:22,251  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:45:22,255  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:45:22,255  INFO SettingsFactory:169 - Connection release mode: auto
+19:45:22,256  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:45:22,257  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:45:22,257  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:45:22,258  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:45:22,258  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:45:22,259  INFO SettingsFactory:212 - Query language substitutions: {}
+19:45:22,260  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:45:22,260  INFO SettingsFactory:222 - Second-level cache: enabled
+19:45:22,264  INFO SettingsFactory:226 - Query cache: disabled
+19:45:22,267  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:45:22,268  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:45:22,269  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:45:22,269  INFO SettingsFactory:277 - Statistics: disabled
+19:45:22,270  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:45:22,270  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:45:22,285  INFO SessionFactoryImpl:161 - building session factory
+19:45:22,287  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:45:22,289  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:45:22,290  INFO SchemaUpdate:126 - fetching database metadata
+19:45:22,296  INFO SchemaUpdate:138 - updating schema
+19:45:22,297  INFO SchemaUpdate:160 - schema update complete
+19:45:22,299 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:45:22,300 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:45:22,301 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:45:22,303 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:22,304 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:45:22,304 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:45:22,305 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:45:22,305 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:45:22,306 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:22,307 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:45:22,307 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:45:22,308 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:45:22,308 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:45:22,312 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:22,316 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:23,630  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:45:23,630  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:45:23,639  INFO Configuration:1538 - Configured SessionFactory: null
+19:45:23,640  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:45:23,640  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:45:23,641  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:45:23,643  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:45:23,647  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:45:23,675  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:45:23,675  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:45:23,677  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:45:23,682  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:45:23,682  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:45:23,683  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:45:23,684  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:45:23,684  INFO SettingsFactory:145 - JDBC batch size: 15
+19:45:23,685  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:45:23,685  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:45:23,688  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:45:23,690  INFO SettingsFactory:169 - Connection release mode: auto
+19:45:23,690  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:45:23,691  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:45:23,691  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:45:23,692  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:45:23,692  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:45:23,693  INFO SettingsFactory:212 - Query language substitutions: {}
+19:45:23,693  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:45:23,694  INFO SettingsFactory:222 - Second-level cache: enabled
+19:45:23,695  INFO SettingsFactory:226 - Query cache: disabled
+19:45:23,695  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:45:23,695  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:45:23,696  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:45:23,697  INFO SettingsFactory:277 - Statistics: disabled
+19:45:23,700  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:45:23,703  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:45:23,727  INFO SessionFactoryImpl:161 - building session factory
+19:45:23,729  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:45:23,730  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:45:23,734  INFO SchemaUpdate:126 - fetching database metadata
+19:45:23,737  INFO SchemaUpdate:138 - updating schema
+19:45:23,739  INFO SchemaUpdate:160 - schema update complete
+19:45:23,741 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:45:23,744 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:45:23,745 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:45:23,746 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:23,746 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:23,747 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:45:23,748 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:45:23,753 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:45:23,754 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:23,754 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:45:23,755 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:45:23,756 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:45:23,756 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:45:23,757 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:45:23,757 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:46:08,086  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:46:08,087  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:46:08,095  INFO Configuration:1538 - Configured SessionFactory: null
+19:46:08,096  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:46:08,098  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:46:08,098  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:46:08,103  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:46:08,103  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:46:08,131  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:46:08,131  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:46:08,133  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:46:08,138  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:46:08,138  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:46:08,139  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:46:08,139  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:46:08,140  INFO SettingsFactory:145 - JDBC batch size: 15
+19:46:08,143  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:46:08,147  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:46:08,147  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:46:08,148  INFO SettingsFactory:169 - Connection release mode: auto
+19:46:08,148  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:46:08,148  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:46:08,149  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:46:08,149  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:46:08,150  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:46:08,150  INFO SettingsFactory:212 - Query language substitutions: {}
+19:46:08,151  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:46:08,151  INFO SettingsFactory:222 - Second-level cache: enabled
+19:46:08,151  INFO SettingsFactory:226 - Query cache: disabled
+19:46:08,154  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:46:08,157  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:46:08,158  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:46:08,158  INFO SettingsFactory:277 - Statistics: disabled
+19:46:08,159  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:46:08,159  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:46:08,168  INFO SessionFactoryImpl:161 - building session factory
+19:46:08,169  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:46:08,169  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:46:08,170  INFO SchemaUpdate:126 - fetching database metadata
+19:46:08,172  INFO SchemaUpdate:138 - updating schema
+19:46:08,172  INFO SchemaUpdate:160 - schema update complete
+19:46:08,202 DEBUG BigDecimalType:122 - returning '10' as column: RANK
+19:46:08,202 DEBUG BigDecimalType:122 - returning '2001' as column: DEPTID
+19:46:08,204 DEBUG StringType:122 - returning 'DeptA' as column: DEPTNAME
+19:46:08,208 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:46:08,209 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:46:08,210 DEBUG BigDecimalType:122 - returning '11' as column: RANK
+19:46:08,210 DEBUG BigDecimalType:122 - returning '2002' as column: DEPTID
+19:46:08,211 DEBUG StringType:122 - returning 'DeptA' as column: DEPTNAME
+19:46:08,211 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:46:08,212 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:46:08,214 DEBUG BigDecimalType:122 - returning '12' as column: RANK
+19:46:08,217 DEBUG BigDecimalType:122 - returning '10' as column: DEPTID
+19:46:08,218 DEBUG StringType:122 - returning 'Admin' as column: DEPTNAME
+19:46:08,218 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:46:08,219 DEBUG BigDecimalType:122 - returning '100' as column: MANAGERID
+19:48:46,872  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:48:46,873  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:48:46,887  INFO Configuration:1538 - Configured SessionFactory: null
+19:48:46,887  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:48:46,888  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:48:46,892  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:48:46,894  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:48:46,898  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:48:46,923  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:48:46,923  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:48:46,925  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:48:46,930  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:48:46,930  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:48:46,930  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:48:46,931  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:48:46,932  INFO SettingsFactory:145 - JDBC batch size: 15
+19:48:46,933  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:48:46,938  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:48:46,939  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:48:46,939  INFO SettingsFactory:169 - Connection release mode: auto
+19:48:46,940  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:48:46,940  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:48:46,940  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:48:46,941  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:48:46,941  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:48:46,942  INFO SettingsFactory:212 - Query language substitutions: {}
+19:48:46,942  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:48:46,942  INFO SettingsFactory:222 - Second-level cache: enabled
+19:48:46,943  INFO SettingsFactory:226 - Query cache: disabled
+19:48:46,943  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:48:46,947  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:48:46,951  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:48:46,953  INFO SettingsFactory:277 - Statistics: disabled
+19:48:46,954  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:48:46,954  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:48:46,962  INFO SessionFactoryImpl:161 - building session factory
+19:48:46,963  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:48:46,963  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:48:46,968  INFO SchemaUpdate:126 - fetching database metadata
+19:48:46,972  INFO SchemaUpdate:138 - updating schema
+19:48:46,974  INFO SchemaUpdate:160 - schema update complete
+19:48:46,976 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:48:46,976 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:48:46,976 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:48:46,977 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:46,977 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:48:46,979 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:48:46,983 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:48:46,985 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:48:46,985 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:46,986 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:48:46,986 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:48:46,987 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:48:46,987 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:48:46,987 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:46,989 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:48:50,203  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:48:50,204  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:48:50,212  INFO Configuration:1538 - Configured SessionFactory: null
+19:48:50,213  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:48:50,214  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:48:50,214  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:48:50,219  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:48:50,219  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:48:50,242  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:48:50,243  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:48:50,244  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:48:50,249  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:48:50,249  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:48:50,250  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:48:50,250  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:48:50,251  INFO SettingsFactory:145 - JDBC batch size: 15
+19:48:50,251  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:48:50,251  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:48:50,252  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:48:50,252  INFO SettingsFactory:169 - Connection release mode: auto
+19:48:50,253  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:48:50,258  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:48:50,259  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:48:50,259  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:48:50,260  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:48:50,260  INFO SettingsFactory:212 - Query language substitutions: {}
+19:48:50,261  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:48:50,261  INFO SettingsFactory:222 - Second-level cache: enabled
+19:48:50,262  INFO SettingsFactory:226 - Query cache: disabled
+19:48:50,262  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:48:50,262  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:48:50,263  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:48:50,263  INFO SettingsFactory:277 - Statistics: disabled
+19:48:50,264  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:48:50,266  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:48:50,277  INFO SessionFactoryImpl:161 - building session factory
+19:48:50,278  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:48:50,278  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:48:50,282  INFO SchemaUpdate:126 - fetching database metadata
+19:48:50,285  INFO SchemaUpdate:138 - updating schema
+19:48:50,286  INFO SchemaUpdate:160 - schema update complete
+19:48:50,288 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:48:50,291 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:48:50,292 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:48:50,293 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:50,293 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:48:50,294 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:48:50,294 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:48:50,295 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:48:50,300 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:50,301 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:48:50,301 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:48:50,302 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:48:50,302 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:48:50,303 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:50,303 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:48:51,928  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:48:51,928  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:48:51,939  INFO Configuration:1538 - Configured SessionFactory: null
+19:48:51,941  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:48:51,941  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:48:51,945  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:48:51,946  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:48:51,947  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:48:51,978  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:48:51,978  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:48:51,980  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:48:51,984  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:48:51,985  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:48:51,985  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:48:51,986  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:48:51,987  INFO SettingsFactory:145 - JDBC batch size: 15
+19:48:51,987  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:48:51,988  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:48:51,993  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:48:51,993  INFO SettingsFactory:169 - Connection release mode: auto
+19:48:51,994  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:48:51,995  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:48:51,995  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:48:51,995  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:48:51,996  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:48:51,996  INFO SettingsFactory:212 - Query language substitutions: {}
+19:48:51,997  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:48:51,997  INFO SettingsFactory:222 - Second-level cache: enabled
+19:48:52,000  INFO SettingsFactory:226 - Query cache: disabled
+19:48:52,004  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:48:52,004  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:48:52,005  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:48:52,005  INFO SettingsFactory:277 - Statistics: disabled
+19:48:52,006  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:48:52,007  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:48:52,020  INFO SessionFactoryImpl:161 - building session factory
+19:48:52,022  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:48:52,023  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:48:52,027  INFO SchemaUpdate:126 - fetching database metadata
+19:48:52,030  INFO SchemaUpdate:138 - updating schema
+19:48:52,032  INFO SchemaUpdate:160 - schema update complete
+19:48:52,034 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:48:52,037 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:48:52,037 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:48:52,038 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:52,038 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:48:52,039 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:48:52,039 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:48:52,040 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:48:52,040 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:52,043 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:48:52,047 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:48:52,048 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:48:52,049 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:48:52,049 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:48:52,050 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:10,500  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:49:10,500  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:49:10,507  INFO Configuration:1538 - Configured SessionFactory: null
+19:49:10,508  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:49:10,508  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:49:10,509  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:49:10,511  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:49:10,512  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:49:10,540  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:49:10,541  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:49:10,542  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:49:10,547  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:49:10,547  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:49:10,548  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:49:10,548  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:49:10,549  INFO SettingsFactory:145 - JDBC batch size: 15
+19:49:10,549  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:49:10,550  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:49:10,550  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:49:10,551  INFO SettingsFactory:169 - Connection release mode: auto
+19:49:10,556  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:49:10,557  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:49:10,557  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:49:10,558  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:49:10,558  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:49:10,558  INFO SettingsFactory:212 - Query language substitutions: {}
+19:49:10,559  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:49:10,559  INFO SettingsFactory:222 - Second-level cache: enabled
+19:49:10,560  INFO SettingsFactory:226 - Query cache: disabled
+19:49:10,560  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:49:10,563  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:49:10,566  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:49:10,567  INFO SettingsFactory:277 - Statistics: disabled
+19:49:10,567  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:49:10,567  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:49:10,576  INFO SessionFactoryImpl:161 - building session factory
+19:49:10,577  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:49:10,577  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:49:10,581  INFO SchemaUpdate:126 - fetching database metadata
+19:49:10,584  INFO SchemaUpdate:138 - updating schema
+19:49:10,587  INFO SchemaUpdate:160 - schema update complete
+19:49:10,589 DEBUG BigDecimalType:122 - returning '1' as column: RANK
+19:49:10,590 DEBUG BigDecimalType:122 - returning '870' as column: DEPTID
+19:49:10,593 DEBUG StringType:122 - returning 'Testing_Dept' as column: DEPTNAME
+19:49:10,594 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:10,598 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:10,599 DEBUG BigDecimalType:122 - returning '2' as column: RANK
+19:49:10,599 DEBUG BigDecimalType:122 - returning '9006' as column: DEPTID
+19:49:10,599 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:49:10,600 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:10,600 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:10,601 DEBUG BigDecimalType:122 - returning '3' as column: RANK
+19:49:10,601 DEBUG BigDecimalType:122 - returning '9005' as column: DEPTID
+19:49:10,602 DEBUG StringType:122 - returning 'Hibernate' as column: DEPTNAME
+19:49:10,605 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:10,608 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:13,089  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:49:13,089  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:49:13,097  INFO Configuration:1538 - Configured SessionFactory: null
+19:49:13,097  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:49:13,098  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:49:13,098  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:49:13,100  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:49:13,101  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:49:13,132  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:49:13,132  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:49:13,134  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:49:13,139  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:49:13,139  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:49:13,140  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:49:13,140  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:49:13,141  INFO SettingsFactory:145 - JDBC batch size: 15
+19:49:13,141  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:49:13,144  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:49:13,147  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:49:13,148  INFO SettingsFactory:169 - Connection release mode: auto
+19:49:13,148  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:49:13,149  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:49:13,150  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:49:13,150  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:49:13,151  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:49:13,151  INFO SettingsFactory:212 - Query language substitutions: {}
+19:49:13,152  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:49:13,152  INFO SettingsFactory:222 - Second-level cache: enabled
+19:49:13,155  INFO SettingsFactory:226 - Query cache: disabled
+19:49:13,159  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:49:13,159  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:49:13,160  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:49:13,161  INFO SettingsFactory:277 - Statistics: disabled
+19:49:13,161  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:49:13,162  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:49:13,173  INFO SessionFactoryImpl:161 - building session factory
+19:49:13,174  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:49:13,174  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:49:13,175  INFO SchemaUpdate:126 - fetching database metadata
+19:49:13,178  INFO SchemaUpdate:138 - updating schema
+19:49:13,181  INFO SchemaUpdate:160 - schema update complete
+19:49:13,183 DEBUG BigDecimalType:122 - returning '4' as column: RANK
+19:49:13,183 DEBUG BigDecimalType:122 - returning '1190' as column: DEPTID
+19:49:13,184 DEBUG StringType:122 - returning 'muthu Dept admin' as column: DEPTNAME
+19:49:13,185 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:13,186 DEBUG BigDecimalType:122 - returning '105' as column: MANAGERID
+19:49:13,187 DEBUG BigDecimalType:122 - returning '5' as column: RANK
+19:49:13,188 DEBUG BigDecimalType:122 - returning '1280' as column: DEPTID
+19:49:13,189 DEBUG StringType:122 - returning 'Aadvik Dept' as column: DEPTNAME
+19:49:13,191 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:13,194 DEBUG BigDecimalType:122 - returning '101' as column: MANAGERID
+19:49:13,197 DEBUG BigDecimalType:122 - returning '6' as column: RANK
+19:49:13,198 DEBUG BigDecimalType:122 - returning '380' as column: DEPTID
+19:49:13,199 DEBUG StringType:122 - returning 'DUMMY DEPT Hi Hi' as column: DEPTNAME
+19:49:13,199 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:13,200 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:14,679  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:49:14,680  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:49:14,691  INFO Configuration:1538 - Configured SessionFactory: null
+19:49:14,692  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:49:14,692  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:49:14,696  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:49:14,697  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:49:14,697  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:49:14,728  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:49:14,733  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:49:14,736  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:49:14,738  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:49:14,739  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:49:14,739  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:49:14,742  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:49:14,743  INFO SettingsFactory:145 - JDBC batch size: 15
+19:49:14,747  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:49:14,747  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:49:14,748  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:49:14,749  INFO SettingsFactory:169 - Connection release mode: auto
+19:49:14,749  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:49:14,750  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:49:14,751  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:49:14,754  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:49:14,758  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:49:14,758  INFO SettingsFactory:212 - Query language substitutions: {}
+19:49:14,759  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:49:14,759  INFO SettingsFactory:222 - Second-level cache: enabled
+19:49:14,760  INFO SettingsFactory:226 - Query cache: disabled
+19:49:14,761  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:49:14,761  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:49:14,762  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:49:14,762  INFO SettingsFactory:277 - Statistics: disabled
+19:49:14,766  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:49:14,770  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:49:14,781  INFO SessionFactoryImpl:161 - building session factory
+19:49:14,782  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:49:14,782  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:49:14,786  INFO SchemaUpdate:126 - fetching database metadata
+19:49:14,790  INFO SchemaUpdate:138 - updating schema
+19:49:14,791  INFO SchemaUpdate:160 - schema update complete
+19:49:14,794 DEBUG BigDecimalType:122 - returning '7' as column: RANK
+19:49:14,796 DEBUG BigDecimalType:122 - returning '1000' as column: DEPTID
+19:49:14,796 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:49:14,797 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:14,798 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:14,798 DEBUG BigDecimalType:122 - returning '8' as column: RANK
+19:49:14,802 DEBUG BigDecimalType:122 - returning '901' as column: DEPTID
+19:49:14,805 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:49:14,805 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:14,806 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:14,807 DEBUG BigDecimalType:122 - returning '9' as column: RANK
+19:49:14,807 DEBUG BigDecimalType:122 - returning '902' as column: DEPTID
+19:49:14,808 DEBUG StringType:122 - returning 'TEST' as column: DEPTNAME
+19:49:14,808 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:14,809 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:41,849  INFO Configuration:1423 - configuring from resource: hibernate.cfg.xml
+19:49:41,852  INFO Configuration:1400 - Configuration resource: hibernate.cfg.xml
+19:49:41,865  INFO Configuration:1538 - Configured SessionFactory: null
+19:49:41,867  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+19:49:41,867  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+19:49:41,871  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+19:49:41,872  INFO DriverManagerConnectionProvider:80 - using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:xe
+19:49:41,872  INFO DriverManagerConnectionProvider:86 - connection properties: {user=hr, password=****}
+19:49:41,905  INFO SettingsFactory:81 - RDBMS: Oracle, version: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+19:49:41,910  INFO SettingsFactory:82 - JDBC driver: Oracle JDBC driver, version: 11.1.0.7.0-Production
+19:49:41,912  INFO Dialect:151 - Using dialect: org.hibernate.dialect.Oracle9Dialect
+19:49:41,915  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+19:49:41,915  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+19:49:41,916  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+19:49:41,916  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+19:49:41,916  INFO SettingsFactory:145 - JDBC batch size: 15
+19:49:41,917  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+19:49:41,917  INFO SettingsFactory:153 - Scrollable result sets: enabled
+19:49:41,918  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): disabled
+19:49:41,924  INFO SettingsFactory:169 - Connection release mode: auto
+19:49:41,924  INFO SettingsFactory:196 - Default batch fetch size: 1
+19:49:41,925  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+19:49:41,926  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+19:49:41,927  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+19:49:41,927  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+19:49:41,928  INFO SettingsFactory:212 - Query language substitutions: {}
+19:49:41,928  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+19:49:41,929  INFO SettingsFactory:222 - Second-level cache: enabled
+19:49:41,932  INFO SettingsFactory:226 - Query cache: disabled
+19:49:41,936  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+19:49:41,936  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+19:49:41,937  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+19:49:41,937  INFO SettingsFactory:277 - Statistics: disabled
+19:49:41,938  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+19:49:41,938  INFO SettingsFactory:296 - Default entity-mode: pojo
+19:49:41,953  INFO SessionFactoryImpl:161 - building session factory
+19:49:41,954  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+19:49:41,955  INFO SchemaUpdate:115 - Running hbm2ddl schema update
+19:49:41,960  INFO SchemaUpdate:126 - fetching database metadata
+19:49:41,961  INFO SchemaUpdate:138 - updating schema
+19:49:41,962  INFO SchemaUpdate:160 - schema update complete
+19:49:41,963 DEBUG BigDecimalType:122 - returning '10' as column: RANK
+19:49:41,965 DEBUG BigDecimalType:122 - returning '2001' as column: DEPTID
+19:49:41,966 DEBUG StringType:122 - returning 'DeptA' as column: DEPTNAME
+19:49:41,970 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:41,970 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:41,971 DEBUG BigDecimalType:122 - returning '11' as column: RANK
+19:49:41,971 DEBUG BigDecimalType:122 - returning '2002' as column: DEPTID
+19:49:41,972 DEBUG StringType:122 - returning 'DeptA' as column: DEPTNAME
+19:49:41,972 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:41,972 DEBUG BigDecimalType:116 - returning null as column: MANAGERID
+19:49:41,973 DEBUG BigDecimalType:122 - returning '12' as column: RANK
+19:49:41,973 DEBUG BigDecimalType:122 - returning '10' as column: DEPTID
+19:49:41,974 DEBUG StringType:122 - returning 'Admin' as column: DEPTNAME
+19:49:41,980 DEBUG BigDecimalType:122 - returning '1700' as column: LOCATIONID
+19:49:41,980 DEBUG BigDecimalType:122 - returning '100' as column: MANAGERID

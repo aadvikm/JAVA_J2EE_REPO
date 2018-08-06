@@ -1,0 +1,3 @@
+Employee Id : 1001
+Employee Name : Aadvik
+Salary : 10000.00
