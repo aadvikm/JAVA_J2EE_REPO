@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE invoice [
+ <!ELEMENT bill (amount,billdate)>
+ <!ATTLIST bill no CDATA #REQUIRED>
+ <!ELEMENT amount (#PCDATA)>
+ <!ELEMENT billdate (#PCDATA)>
+]>
+<invoice>
+	<bill no="100">
+		<amount>1000</amount>
+		<billdate>09/29/17</billdate>
+	</bill>
+	<bill no="200">
+		<amount></amount>
+		<billdate></billdate>
+	</bill>
+</invoice>

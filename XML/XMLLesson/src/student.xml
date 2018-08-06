@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student stuId="100">
+	<name>Aadvik</name>
+	<deptId>LKG</deptId>
+	<age>3</age>
+	<subject>
+		<subjectName >English</subjectName>
+		<subjectName >Maths</subjectName>
+		<subjectName>History</subjectName>
+		<subjectName>Science</subjectName>
+	</subject>
+</student>

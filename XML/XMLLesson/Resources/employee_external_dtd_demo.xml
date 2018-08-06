@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE EMPLOYEES SYSTEM "employee.dtd">
+<employees>
+	<employee empid="100">
+		<name>Aadvik</name>
+		<age>0</age>
+		<salary>0</salary>
+		<manager></manager>
+	</employee>
+	<employee empid="100">
+		<name>Muthu</name>
+		<age>30</age>
+		<salary>1000</salary>
+		<manager></manager>
+	</employee>
+	<employee empid="100">
+		<name>Brindha</name>
+		<age>26</age>
+		<salary>500</salary>
+		<manager></manager>
+	</employee>
+</employees>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoice no ="100">
+	<billno>10</billno>
+	<amount>1000</amount>
+	<billdate>10/02/17</billdate>
+</invoice
+>

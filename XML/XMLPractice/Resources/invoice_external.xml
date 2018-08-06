@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE INVOICE SYSTEM "invoice.dtd">
+<invoice>
+	<bill no="100">
+		<amount>1000</amount>
+		<billdate>09/29/17</billdate>
+	</bill>
+	<bill no="200">
+		<amount></amount>
+		<billdate></billdate>
+	</bill>
+</invoice>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!ELEMENT bill (amount,billdate)>
+ <!ATTLIST bill no CDATA #REQUIRED>
+ <!ELEMENT amount (#PCDATA)>
+ <!ELEMENT billdate (#PCDATA)>

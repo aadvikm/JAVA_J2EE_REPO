@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees [
+ <!ELEMENT employee (name, age, salary, manager)>
+ <!ATTLIST employee empid CDATA #REQUIRED> 
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT age (#PCDATA)>
+ <!ELEMENT salary (#PCDATA)>
+ <!ELEMENT manager (#PCDATA)>
+]>
+<employees>
+	<employee empid="100">
+		<name>Aadvik</name>
+		<age>0</age>
+		<salary>0</salary>
+		<manager></manager>
+	</employee>
+	<employee empid="100">
+		<name>Muthu</name>
+		<age>30</age>
+		<salary>1000</salary>
+		<manager></manager>
+	</employee>
+	<employee empid="100">
+		<name>Brindha</name>
+		<age>26</age>
+		<salary>500</salary>
+		<manager></manager>
+	</employee>
+</employees>

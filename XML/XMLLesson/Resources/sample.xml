@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<employee id="100">
+		<name>Muthu</name>
+		<dob>04/19/1987</dob>
+		<deptid>10</deptid>
+	</employee>
+	<employee id="101">
+		<name>Jhon</name>
+		<dob>06/10/1980</dob>
+		<deptid>20</deptid>
+	</employee>
+	<employee id="102">
+		<name>Aadvik</name>
+		<dob>04/19/1987</dob>
+		<deptid>10</deptid>
+	</employee>
+	<city></city>
+</employees>
