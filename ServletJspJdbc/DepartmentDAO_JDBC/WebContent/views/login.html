@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<script type="text/javascript">
+   alert("Welcome to Department Login.!!");
+</script>
+<script type="text/javascript" src="js/loginreset.js"></script>
+</head>
+<body bgcolor ="skyblue">
+<form id="loginreset" name ="loginreset" method="post" action="/DepartmentDAO_JDBC/loginServlet">
+User Name : <input id="username" name="username" type="text" value=""></input>
+<br/>
+Password : <input id="password" name="password" type="text" value=""></input>
+<tr>
+<td colspan='5' align="right"><input type="button" value="Reset" onclick="resetForm();">&nbsp;<input type="button" onclick="validateAndSubmit();" value="Login"></td>
+</tr>
+</form>
+</body>
+</html>

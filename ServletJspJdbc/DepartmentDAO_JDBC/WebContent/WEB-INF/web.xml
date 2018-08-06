@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<welcome-file-list>
+		<welcome-file>/views/login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.departmentDAO.JDBC.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeptPage</servlet-name>
+		<servlet-class>com.departmentDAO.JDBC.DeptPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginFail</servlet-name>
+		<jsp-file>/views/loginFail.html</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>CreateDept</servlet-name>
+		<servlet-class>com.departmentDAO.JDBC.CreateDept</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FindDept</servlet-name>
+		<servlet-class>com.departmentDAO.JDBC.FindDept</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SavedPage</servlet-name>
+		<servlet-class>com.departmentDAO.JDBC.SavedPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.departmentDAO.JDBC.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeptPage</servlet-name>
+		<url-pattern>/deptPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreateDept</servlet-name>
+		<url-pattern>/createDept</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FindDept</servlet-name>
+		<url-pattern>/findDept</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SavedPage</servlet-name>
+		<url-pattern>/savedPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginFail</servlet-name>
+		<url-pattern>/loginFailPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logoutServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
