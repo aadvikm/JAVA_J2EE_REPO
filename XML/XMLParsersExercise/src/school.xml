@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+	<name schoolId="100">LCMM</name>
+	<address>Cuddalore</address>
+	<pin>607002</pin>
+	<noofstudent>5000</noofstudent>
+</school>

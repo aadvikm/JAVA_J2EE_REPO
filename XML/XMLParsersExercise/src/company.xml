@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+	<companyName>HTC</companyName>
+	<companyCity>Troy</companyCity>
+	<manager>
+		<name>Jhon</name>
+		<sal>$100000</sal>
+		<dept>IT</dept>
+		<employee>
+			<name>Kelly</name>
+			<sal>$45000</sal>
+		</employee>
+		<employee>
+			<name>David</name>
+			<sal>$65000</sal>
+		</employee>
+		<employee>
+			<name>Matt</name>
+			<sal>$50000</sal>
+		</employee>
+	</manager>
+</company>

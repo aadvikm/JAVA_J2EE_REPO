@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<departmentEntity>
+    <deptId>10</deptId>
+    <deptName>Admin</deptName>
+    <locationId>1700</locationId>
+    <managerId>100</managerId>
+</departmentEntity>
