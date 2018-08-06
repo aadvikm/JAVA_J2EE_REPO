@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<welcome-file-list>
+		<welcome-file>/views/login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.updedepartmentdaojdbc.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginFail</servlet-name>
+		<jsp-file>/views/loginFail.html</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>DeptPage</servlet-name>
+		<servlet-class>com.updedepartmentdaojdbc.DeptPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdatePage</servlet-name>
+		<servlet-class>com.updedepartmentdaojdbc.UpdatePage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeletePage</servlet-name>
+		<servlet-class>com.updedepartmentdaojdbc.DeletePage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.updedepartmentdaojdbc.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginFail</servlet-name>
+		<url-pattern>/loginFailPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeptPage</servlet-name>
+		<url-pattern>/deptPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdatePage</servlet-name>
+		<url-pattern>/updatePage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeletePage</servlet-name>
+		<url-pattern>/deletePage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logoutServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
