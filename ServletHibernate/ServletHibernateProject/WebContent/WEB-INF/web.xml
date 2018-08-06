@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <welcome-file-list>
+    <welcome-file>/views/getEmpDetail.html</welcome-file>
+  </welcome-file-list>
+   <servlet>
+    <servlet-name>EmpDetail</servlet-name>
+    <servlet-class>com.servlethibernateproject.GetEmployeeDetail</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>UpdateEmployee</servlet-name>
+    <servlet-class>com.servlethibernateproject.UpdateEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteEmployee</servlet-name>
+    <servlet-class>com.servlethibernateproject.DeleteEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateEmployeeServlet</servlet-name>
+    <servlet-class>com.servlethibernateproject.CreateEmployeeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SaveEmployeeServlet</servlet-name>
+    <servlet-class>com.servlethibernateproject.SaveEmployeeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EmpDetail</servlet-name>
+    <url-pattern>/getEmpDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateEmployee</servlet-name>
+    <url-pattern>/updateEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteEmployee</servlet-name>
+    <url-pattern>/deleteEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateEmployeeServlet</servlet-name>
+    <url-pattern>/createEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveEmployeeServlet</servlet-name>
+    <url-pattern>/saveEmployee</url-pattern>
+  </servlet-mapping>
+</web-app>
