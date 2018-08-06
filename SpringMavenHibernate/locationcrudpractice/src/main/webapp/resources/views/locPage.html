@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Location Page</title>
+<link rel="stylesheet" type="text/css" href="./resources/css/bootstrap.min.css">
+<script type='text/javascript' src='./resources/js/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='./resources/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='./resources/js/underscore.js'></script>
+<script type='text/javascript' src='./resources/js/locpage.js'></script>
+<script id="locDetailTempl" type="text/template">
+<form class='form-vertical'>
+            <div class="form-row">
+			<legend style="text-align:left"><h5>Location Details</h5></legend>
+			</div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+				<label for="locId">Location Id:</label>
+				<input type="input" class="form-control" id="locId" placeholder="Enter Location Id" value="<%= locDetail.locId %>" />
+				
+				</div>
+				<div class="form-group col-md-6">
+				<label for="city">City:</label>
+				<input type="input" class="form-control" id="city" placeholder="Enter City" value="<%= locDetail.city %>">
+				</div>
+			</div>
+			<div class="form-row">
+                <div class="form-group col-md-6">
+				<label for="streetAdd">Street Address:</label>
+				<input type="input" class="form-control" id="streetAdd" placeholder="Enter Street Address" value="<%= locDetail.streetAdd %>" />
+				
+				</div>
+				<div class="form-group col-md-6">
+				<label for="postalCode">Postal Code:</label>
+				<input type="input" class="form-control" id="postalCode"  value="<%= locDetail.postalCode %>">
+				</div>
+			</div>
+			<div class="form-row">
+                <div class="form-group col-md-6">
+				<label for="stateProvince">State Province:</label>
+				<input type="input" class="form-control" id="stateProvince" placeholder="Enter State Province" value="<%= locDetail.stateProvince %>" />
+				
+				</div>
+				<div class="form-group col-md-6">
+				<label for="countryId">Country Id :</label>
+				<select id="countryId" class="form-control" >
+				<%_.each(locDetail.countryList, function(loc) {
+					  if(loc.countryId == locDetail.countryId){%>
+					  
+					  <option value='<%= loc.countryId%>' selected><%= loc.countryId %></option>
+					  
+					  <%}else{%>
+					  <option value='<%= loc.countryId %>'><%= loc.countryId %></option>
+					  <%}})%>
+					</select>
+				</div>
+			</div>
+			
+			<div class='form-row'> 
+			<div class='col-md-12' style='text-align:right'>
+<button id="updateBtn" type="button"  class="btn btn-default">Update</button>
+</div>
+</div>		
+</form>
+</script>
+<script id="createLocDetailTemp" type="text/template">
+	<form class='form-vertical'>
+            <div class="form-row">
+			<legend style="text-align:left"><h5>New Location Details</h5></legend>
+			</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="streetAdd">Street Address:</label>
+				<input type="input" class="form-control" id="streetAdd" placeholder="Enter Street Address" value=" ">
+			</div>
+		</div>
+		<div class="form-row">
+                <div class="form-group col-md-6">
+				<label for="city">City:</label>
+				<input type="input" class="form-control" id="city" placeholder="Enter City" value=" " />
+				
+				</div>
+				<div class="form-group col-md-6">
+				<label for="postalCode">Postal Code:</label>
+				<input type="input" class="form-control" id="postalCode"  placeholder="Enter Postal Code" value=" ">
+				</div>
+			</div>
+			<div class="form-row ">
+				<div class="form-group col-md-6">
+					<label for="stateProvince">State Province:</label>
+					<input type="input" class="form-control" id="stateProvince" placeholder="Enter State Province" value=" ">
+				</div>
+                <div class="form-group col-md-6">
+                    <label for="countryId">Country Id :</label>
+					<select class="form-control" id="countryId">
+					  <%_.each(createLocDetail.countryList, function(loc) { 
+					 %>
+					  <option value='<%= loc.countryId%>'><%= loc.countryId %></option>
+					 <% })%>
+					</select>
+				</div>
+            </div>
+			<div class='form-row'> 
+			<div class='col-md-12' style='text-align:right'>
+<button id="saveBtn" type="button"  class="btn btn-default">Save Details</button>
+</div>
+</div>	
+</form>
+</script>
+<script id="errMsgTempl" type="text/template">
+	<div class="alert alert-danger">
+		 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Error!</strong> <%= msg %>
+	</div>
+</script>
+<script id="infoMsgTempl" type="text/template">
+	<div class="alert alert-success">
+		 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Success!</strong> <%= msg %>
+	</div>
+</script>
+</head>
+<body onload='getLocations()'>
+<form id='locPage' name='locPage'>
+<div class="container-fluid text-center"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<img src='./resources/images/locporImage.png' class='img-rounded float-center'
+						width='999.25px' height='150px'>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+<div class="container-fluid"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+	
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<div class='table'>
+
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class="form-group col-md-3" >
+    <label for="locations">Locations :</label>
+    <select class="form-control" id="locations" onchange ='getLocDetails(this)'>
+      <option></option>
+      <option>Seattle</option>
+      <option>London</option>
+    </select>
+</div>
+<div class="form-group col-md-3" >
+   <button id="createBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="createNewLoc()">Create New Location</button>
+</div>
+<div class="form-group col-md-3" >
+   <button id="deleteBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="deleteLocation()">Delete Location Detail</button>
+</div>
+<div class="form-group col-md-3" >
+   <button id="logoutBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="logout()">Logout</button>
+</div>
+</div>
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class='col-md-12' id='msgDiv'>
+<!-- Msg Template Content will go in here... -->
+</div>
+</div>
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class='col-md-12' id='pageContainer'>
+<!-- Template Content will go in here... -->
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+<div class="container-fluid text-center"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<img src='./resources/images/locfooter.png' class='img-rounded float-center' width='999.25px' height='50px'>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
