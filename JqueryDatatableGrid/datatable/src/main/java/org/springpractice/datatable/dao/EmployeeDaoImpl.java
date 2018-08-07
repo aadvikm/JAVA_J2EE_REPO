@@ -25,16 +25,17 @@ public class EmployeeDaoImpl implements EmployeeDao{
 		LOG.info("Fetching Mgr List");
 		Session session = sessionFactory.openSession();
 		SQLQuery query1 =session.createSQLQuery("SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, HIRE_DATE, SALARY, D.DEPARTMENT_NAME, L.CITY FROM EMPLOYEES E, DEPARTMENTS D, LOCATIONS L WHERE E.DEPARTMENT_ID = D.DEPARTMENT_ID AND L.LOCATION_ID = D.LOCATION_ID AND EXISTS (SELECT * FROM EMPLOYEES E1 WHERE E1.MANAGER_ID = E.EMPLOYEE_ID)");
-		ArrayList<Employee> mgrList =new ArrayList<Employee>();
+		ArrayList<Employee> empList =new ArrayList<Employee>();
 		for(Object obj : query1.list()){
 			Object[] objArr = (Object[]) obj;
-			Employee emp =new Employee(, (String)objArr[1]);
+			Employee emp =new Employee();
 			emp.setEmployeeId(((BigDecimal)objArr[0]).longValue());
-			mgrList.add(mgr);
+			emp.setFirstName((String)objArr[0]);
+			empList.add(emp);
 		}
 		session.close();
 		LOG.info("Returning mgr list...");
-		return mgrList;
+		return empList;
 	}
 
 	public ArrayList<Employee> getEmployees() throws Exception {
