@@ -53,7 +53,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
 				<prop key="hibernate.current_session_context_class">thread</prop>
 				<prop key="hibernate.show_sql">false</prop>
 			</props>
@@ -68,7 +68,7 @@
     </property>
 </bean>
 	
-	<bean id="locationDao" class="org.springpractice.datatable.dao.EmployeeDaoImpl">
+	<bean id="employeeDao" class="org.springpractice.datatable.dao.EmployeeDaoImpl">
 		<property name="sessionFactory" ref="hibernate3AnnotatedSessionFactory" />
 	</bean>
 

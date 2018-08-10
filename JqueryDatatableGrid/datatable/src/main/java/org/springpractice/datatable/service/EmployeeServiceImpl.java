@@ -28,9 +28,9 @@ public class EmployeeServiceImpl implements EmployeeService{
 		}
 	}
 
-	public ArrayList<Employee> getEmployees() throws EmployeeException {
+	public ArrayList<Employee> getEmployees(Long mgrId) throws EmployeeException {
 		try{
-			return employeeDao.getEmployees();
+			return employeeDao.getEmployees(mgrId);
 		}
 		catch(Exception exception){
 			LOG.error("Error occured in getEmployees..", exception);

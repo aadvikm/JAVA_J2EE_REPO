@@ -1,16 +1,18 @@
-function getDepartments(){
+$(document).ready(function() {
+    getManagers();
+});
+
+function getManagers(){
 	$.ajax ({
-		'url' : './getdepartments',
+		'url' : './getmanagers',
 		'type' : 'GET' ,
 		'success' : function(result) {   
-			$("#departments").empty();
-			$("#departments").append('<option value=\'\'></option>');
+			$("#managerSelectId").empty();
+			$("#managerSelectId").append('<option value=\'\'></option>');
 			alert(JSON.stringify(result));
 			console.log(result);
-			var deptList =JSON.parse(result.jsonData);
-			$.each(deptList, function(index, dept){
-				console.log(index+'----'+dept.deptId);
-				$('#departments').append('<option value='+dept.deptId+'>'+dept.deptName+'</option>');
+			$.each(result, function(index, manager){
+				$('#managerSelectId').append('<option value='+manager.employeeId+'>'+manager.firstName+'</option>');
 			});
 		
 		},
@@ -21,13 +23,13 @@ function getDepartments(){
 	});
 }
 
-function getDeptDetail(element) {
-	if ($('#departments').val() != null) {
+function getEmployeeDetail(element) {
+	if ($('#managerSelectId').val() != null) {
 		$.ajax({
-			'url' : './getdeptdetail',
-			'type' : 'POST',
+			'url' : './getemployees',
+			'type' : 'GET',
 			'data' : {
-				'deptId' : element.value
+				'mgrId' : element.value
 			},
 			'success' : function(resultData) {
 				console.log(JSON.stringify(resultData));
@@ -38,14 +40,18 @@ function getDeptDetail(element) {
 					}));
 				}
 				else{
-					var compiledDeptDetailTemplate = _.template($("#deptDetailTempl")
-							.html());
-					$("#pageContainer").html(compiledDeptDetailTemplate({
-						deptDetail : JSON.parse(resultData.jsonData)
-					}));
-					$("#updateBtn").click(function() {
-						updateDept();
-					});
+					 $('#empGrid').DataTable({
+					  data: resultData,
+					  columns: [
+						{ "title": "Employee Id", "data" : "employeeId" },
+						{ "title": "First Name", "data" : "firstName" },
+						{ "title": "Last Name", "data" : "lastName" },
+						{ "title": "Salary", "data" : "salary"},
+						{ "title": "Hire Date", "data" : "hireDate"},
+						{ "title": "Department", "data" : "department"},
+						{ "title": "Location", "data" : "location"}
+					  ]
+					 });
 				}
 			},
 			'error' : function(request, error) {

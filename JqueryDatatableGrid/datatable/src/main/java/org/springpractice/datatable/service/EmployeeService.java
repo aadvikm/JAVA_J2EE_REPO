@@ -10,6 +10,6 @@ public interface EmployeeService {
 
 	public List<Employee> getManagers() throws EmployeeException;
 	
-	public ArrayList<Employee> getEmployees() throws EmployeeException;
+	public ArrayList<Employee> getEmployees(Long mgrId) throws EmployeeException;
 
 }

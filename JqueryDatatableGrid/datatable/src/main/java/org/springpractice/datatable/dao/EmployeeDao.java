@@ -8,6 +8,6 @@ public interface EmployeeDao {
 
 	public ArrayList<Employee> getManagers() throws Exception;
 	
-	public ArrayList<Employee> getEmployees() throws Exception;
+	public ArrayList<Employee> getEmployees(Long mgrId) throws Exception;
 	
 }

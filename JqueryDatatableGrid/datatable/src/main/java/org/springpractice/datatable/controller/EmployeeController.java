@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springpractice.datatable.domain.Employee;
 import org.springpractice.datatable.service.EmployeeService;
@@ -28,7 +29,7 @@ public class EmployeeController {
 	@ResponseBody
 	public ArrayList<Employee> getManagers() {
 		try{
-			return employeeService.getEmployees();
+			return (ArrayList<Employee>) employeeService.getManagers();
 		}
 		catch(Exception exception){
 			LOG.error("Error occurred in getManagers", exception);
@@ -36,10 +37,11 @@ public class EmployeeController {
 		}
 	}
 	
-	@RequestMapping(value="/getManagers", method=RequestMethod.GET)
-	public ArrayList<Employee> getEmployees(){
+	@RequestMapping(value="/getemployees", method=RequestMethod.GET)
+	@ResponseBody
+	public ArrayList<Employee> getEmployees(@RequestParam(value="mgrId") Long mgrId){
 		try{
-			return null;
+			return employeeService.getEmployees(mgrId);
 		}
 		catch(Exception exception){
 			LOG.error("Error occurred in getEmployees", exception);
