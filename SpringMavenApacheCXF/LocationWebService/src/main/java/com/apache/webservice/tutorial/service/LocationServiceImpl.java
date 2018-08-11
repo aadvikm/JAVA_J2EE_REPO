@@ -12,14 +12,22 @@ import com.apache.webservice.tutorial.domain.LocationDetail;
 import com.apache.webservice.tutorial.domain.LocationEntity;
 import com.apache.webservice.tutorial.exception.LocationException;
 
-@Service
+
 public class LocationServiceImpl implements LocationService{
 
 	private static Logger LOG = Logger.getLogger(LocationServiceImpl.class);
 	
-	@Autowired
 	private LocationDao locationDao;
 	
+	
+	public LocationDao getLocationDao() {
+		return locationDao;
+	}
+
+	public void setLocationDao(LocationDao locationDao) {
+		this.locationDao = locationDao;
+	}
+
 	public LocationEntity saveLocation(LocationDetail locationDetail) throws LocationException {
 		try{
 			LocationEntity locationEntity = convertLocationDetailToEntity(locationDetail);

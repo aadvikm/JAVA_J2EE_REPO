@@ -16,7 +16,6 @@ import com.apache.webservice.tutorial.domain.Country;
 import com.apache.webservice.tutorial.domain.LocationDetail;
 import com.apache.webservice.tutorial.domain.LocationEntity;
 
-@Repository
 public class LocationDaoImpl implements LocationDao{
 	
 	private static Logger LOG = Logger.getLogger(LocationDaoImpl.class);

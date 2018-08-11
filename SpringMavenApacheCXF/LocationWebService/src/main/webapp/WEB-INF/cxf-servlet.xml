@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:mvc="http://www.springframework.org/schema/mvc"
+		xmlns:context="http://www.springframework.org/schema/context"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      	xmlns:cxf="http://cxf.apache.org/core"
 		xmlns:jaxws="http://cxf.apache.org/jaxws"
 		xmlns:jaxrs="http://cxf.apache.org/jaxrs"
 		xsi:schemaLocation="
+			http://www.springframework.org/schema/mvc 
+        	http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+			http://www.springframework.org/schema/context 
+        	http://www.springframework.org/schema/context/spring-context-3.2.xsd
 			http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
 			http://www.springframework.org/schema/beans 
 			http://www.springframework.org/schema/beans/spring-beans.xsd
 			http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
 			http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
-
+	
 	<import resource="classpath:META-INF/cxf/cxf.xml"/>
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+	
+	<context:spring-configured />
+	<context:component-scan base-package="org.apache.webservice.tutorial" />
+	
+	<context:annotation-config />
+	
+	
 
     <cxf:bus>
         <cxf:features>
@@ -61,9 +74,15 @@
 			</props>
 		</property>
 	</bean>
-	<bean id="locationDao" class="org.springpractice.dao.LocationDaoImpl">
+	<bean id="locationDao" class="com.apache.webservice.tutorial.dao.LocationDaoImpl">
 		<property name="sessionFactory" ref="hibernate3AnnotatedSessionFactory" />
 	</bean>
-  	<jaxws:endpoint id="locationService" implementor="org.apache.webservice.tutorial.webservice.LocationWebServiceImpl" address="/LocationService"/>
+	<bean id="locationServiceImpl" class="com.apache.webservice.tutorial.service.LocationServiceImpl">
+		<property name="locationDao" ref="locationDao" />
+	</bean>
+	<bean id="locationWebServiceImpl" class="com.apache.webservice.tutorial.webservice.LocationWebServiceImpl">
+		<property name="locationService" ref="locationServiceImpl" />
+	</bean>
+  	<jaxws:endpoint id="locationWebService" implementor="#locationWebServiceImpl" address="/LocationService" />
 
 </beans>

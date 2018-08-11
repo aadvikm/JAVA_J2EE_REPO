@@ -1,7 +1,10 @@
 package com.apache.webservice.tutorial.webservice;
 
+import javax.jws.WebService;
+
 import com.apache.webservice.tutorial.exception.LocationException;
 
+@WebService
 public interface LocationWebService {
 
 	/**

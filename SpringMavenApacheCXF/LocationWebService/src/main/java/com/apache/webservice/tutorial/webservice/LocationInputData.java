@@ -6,6 +6,7 @@ public class LocationInputData {
 	
 	private Long locationId;
 	private LocationDetail locationDetail;
+	
 	public Long getLocationId() {
 		return locationId;
 	}
