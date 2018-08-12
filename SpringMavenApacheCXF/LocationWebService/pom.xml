@@ -11,7 +11,7 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<jdk.version>1.6</jdk.version>
+		<jdk.version>1.8</jdk.version>
 		<cxf.version>3.0.3</cxf.version>
 		<httpclient.version>3.1</httpclient.version>
 		<jax.ws.rs>2.0.1</jax.ws.rs>

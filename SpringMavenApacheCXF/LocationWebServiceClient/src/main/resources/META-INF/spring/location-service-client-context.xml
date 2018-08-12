@@ -10,7 +10,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	<context:component-scan base-package="gov.mdhhs.icms.client" />
 	<jaxws:client id="loationWebService"
-		serviceClass="com.apache.webservice.tutorial.webservice.LocationWebService" address="http://localhost:8080/locationwebservice/LocationService" >
+		serviceClass="com.apache.webservice.tutorial.webservice.LocationWebService" address="http://localhost:8090/locationwebservice/LocationService" >
 		 <jaxws:features>
 			<bean class="org.apache.cxf.feature.LoggingFeature" />
 		</jaxws:features>
