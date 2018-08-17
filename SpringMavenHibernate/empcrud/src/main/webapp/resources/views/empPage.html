@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Page</title>
+<link rel="stylesheet" type="text/css" href="./resources/css/bootstrap.min.css">
+<script type='text/javascript' src='./resources/js/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='./resources/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='./resources/js/underscore.js'></script>
+<script type='text/javascript' src='./resources/js/emppage.js'></script>
+<script id="empDetailTempl" type="text/template">
+<form class='form-vertical'>
+            <div class="form-row">
+			<legend style="text-align:left"><h5>Employee Details</h5></legend>
+			</div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+				<label for="empId">Employee Id:</label>
+				<input type="input" class="form-control" id="empId" placeholder="Enter Employee Id" value="<%= empDetail.empId %>" />
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+				<label for="firstName">First Name:</label>
+				<input type="input" class="form-control" id="firstName" placeholder="Enter First Name" value="<%= empDetail.firstName %>">
+				</div>
+				
+                <div class="form-group col-md-6">
+				<label for="lastName">Last Name:</label>
+				<input type="input" class="form-control" id="lastName" placeholder="Enter Last Name" value="<%= empDetail.lastName %>" />
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+				<label for="hireDate">Hire Date:</label>
+				<input type="input" class="form-control" id="hireDate" placeholder="Enter HireDate" value="<%= empDetail.hireDate %>">
+				</div>
+				<div class="form-group col-md-6">
+				<label for="salary">Salary :</label>
+				<input type="input" class="form-control" id="salary" placeholder="Enter Salary" value="<%= empDetail.salary %>">
+				</div>
+			</div>
+			<div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="managerId">Manager :</label>
+					<select class="form-control" id="managerId">
+						<option value=''></option>
+					  <%_.each(empDetail.managerList, function(emp) { 
+					  if(emp.managerId == empDetail.managerId){
+					  %>
+					  <option value='<%= emp.managerId %>' selected><%= emp.managerName %></option>
+					  <%}
+					  else{%>
+					  <option value='<%= emp.managerId  %>'><%= emp.managerName %></option>
+					 <% }})%>
+					</select>
+				</div>
+                <div class="form-group col-md-6">
+                    <label for="deptId">Department  :</label>
+					<select class="form-control" id="deptId">
+					<option value=''></option>
+					  <%_.each(empDetail.deptList, function(emp) {
+					  if(emp.deptId == empDetail.deptId){%>
+					  
+					  <option value='<%= emp.deptId%>' selected><%= emp.deptName %></option>
+					  
+					  <%}else{%>
+					  <option value='<%= emp.deptId %>'><%= emp.deptName %></option>
+					  <%}})%>
+					</select>
+				</div>
+            </div>
+			<div class='form-row'> 
+			<div class='col-md-12' style='text-align:right'>
+<button id="updateBtn" type="button"  class="btn btn-default">Update</button>
+</div>
+</div>		
+</form>
+</script>
+<script id="createEmpDetailTemp" type="text/template">
+	<form class='form-vertical'>
+            <div class="form-row">
+			<legend style="text-align:left"><h5>New Employee Details</h5></legend>
+			</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="firstName">First Name:</label>
+				<input type="input" class="form-control" id="firstName" placeholder="Enter First Name" value=" ">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="lastName">Last Name:</label>
+				<input type="input" class="form-control" id="lastName" placeholder="Enter Last Name" value=" ">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="hireDate">Hire Date:</label>
+				<input type="input" class="form-control" id="hireDate" placeholder="Enter HireDate " value=" ">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="salary">Salary:</label>
+				<input type="input" class="form-control" id="salary" placeholder="Enter Salary" value=" ">
+			</div>
+		</div>
+			<div class="form-row ">
+				<div class="form-group col-md-6">
+                    <label for="managerId">Manager :</label>
+					<select class="form-control" id="managerId">
+					<option value=''></option>
+					  <%_.each(empDetail.managerList, function(manager) { 
+					 %>
+					  <option value='<%= manager.managerId%>'><%= manager.managerName %></option>
+					 <% })%>
+					</select>
+				</div>
+                <div class="form-group col-md-6">
+                    <label for="deptId">Department  :</label>
+					<select class="form-control" id="deptId">
+					<option value=''></option>
+					  <%_.each(empDetail.deptList, function(dept) { 
+					 %>
+					  <option value='<%= dept.deptId%>'><%= dept.deptName%></option>
+					 <% })%>
+					</select>
+				</div>
+            </div>
+			<div class='form-row'> 
+			<div class='col-md-12' style='text-align:right'>
+<button id="saveBtn" type="button"  class="btn btn-default">Save Details</button>
+</div>
+</div>	
+</form>
+</script>
+<script id="errMsgTempl" type="text/template">
+	<div class="alert alert-danger">
+		 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Error!</strong> <%= msg %>
+	</div>
+</script>
+<script id="infoMsgTempl" type="text/template">
+	<div class="alert alert-success">
+		 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Success!</strong> <%= msg %>
+	</div>
+</script>
+</head>
+<body onload='getEmployees()'>
+<form id='empPage' name='empPage'>
+<div class="container-fluid text-center"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<img src='./resources/images/empbanner.png' class='img-rounded float-center'
+						width='999.25px' height='150px'>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+<div class="container-fluid"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+	
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<div class='table'>
+
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class="form-group col-md-3" >
+    <label for="employees">Employees :</label>
+    <select class="form-control" id="employees" onchange ='getEmployeeDetail(this)'>
+      <option></option>
+      <option>Steven</option>
+      <option>Aadvik</option>
+    </select>
+</div>
+<div class="form-group col-md-3" >
+   <button id="createBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="createNewEmp()">Create New Employee</button>
+</div>
+<div class="form-group col-md-3" >
+   <button id="deleteBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="deleteEmployee()">Delete Emp Detail</button>
+</div>
+
+</div>
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class='col-md-12' id='msgDiv'>
+<!-- Msg Template Content will go in here... -->
+</div>
+</div>
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class='col-md-12' id='pageContainer'>
+<!-- Template Content will go in here... -->
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+<div class="container-fluid text-center"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<img src='./resources/images/empfooter.png' class='img-rounded float-center' width='999.25px' height='50px'>
+</div>
+<div class="col-md-2 "> 
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
