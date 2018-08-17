@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservice.tutorial.webservice.apache.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="locationWebServiceImpl" targetNamespace="http://webservice.tutorial.webservice.apache.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice.tutorial.webservice.apache.com/" elementFormDefault="unqualified" targetNamespace="http://webservice.tutorial.webservice.apache.com/" version="1.0">
+
+  <xs:element name="deleteLocation" type="tns:deleteLocation"/>
+
+  <xs:element name="deleteLocationResponse" type="tns:deleteLocationResponse"/>
+
+  <xs:element name="getCountryList" type="tns:getCountryList"/>
+
+  <xs:element name="getCountryListResponse" type="tns:getCountryListResponse"/>
+
+  <xs:element name="getLocationDetail" type="tns:getLocationDetail"/>
+
+  <xs:element name="getLocationDetailResponse" type="tns:getLocationDetailResponse"/>
+
+  <xs:element name="getLocations" type="tns:getLocations"/>
+
+  <xs:element name="getLocationsResponse" type="tns:getLocationsResponse"/>
+
+  <xs:element name="saveLocation" type="tns:saveLocation"/>
+
+  <xs:element name="saveLocationResponse" type="tns:saveLocationResponse"/>
+
+  <xs:element name="updateLocation" type="tns:updateLocation"/>
+
+  <xs:element name="updateLocationResponse" type="tns:updateLocationResponse"/>
+
+  <xs:complexType name="getLocationDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:locationInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="locationInputData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="locationDetail" type="tns:locationDetail"/>
+      <xs:element minOccurs="0" name="locationId" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="locationDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="city" type="xs:string"/>
+      <xs:element minOccurs="0" name="countryId" type="xs:string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="countryList" nillable="true" type="tns:country"/>
+      <xs:element minOccurs="0" name="locId" type="xs:long"/>
+      <xs:element minOccurs="0" name="postalCode" type="xs:string"/>
+      <xs:element minOccurs="0" name="stateProvince" type="xs:string"/>
+      <xs:element minOccurs="0" name="streetAdd" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="countryId" type="xs:string"/>
+      <xs:element minOccurs="0" name="countryName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLocationDetailResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:locationOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="locationOutputData">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="countryList" nillable="true" type="tns:country"/>
+      <xs:element minOccurs="0" name="errorMessage" type="xs:string"/>
+      <xs:element minOccurs="0" name="locationDetail" type="tns:locationDetail"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="locationDetailList" nillable="true" type="tns:locationDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:locationInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteLocationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:locationOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:locationInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateLocationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:locationOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCountryList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:locationInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCountryListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:locationOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLocations">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:locationInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getLocationsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:locationOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saveLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:locationInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saveLocationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:locationOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getLocationDetail">
+    <wsdl:part element="tns:getLocationDetail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateLocationResponse">
+    <wsdl:part element="tns:updateLocationResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLocation">
+    <wsdl:part element="tns:deleteLocation" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCountryListResponse">
+    <wsdl:part element="tns:getCountryListResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateLocation">
+    <wsdl:part element="tns:updateLocation" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLocationDetailResponse">
+    <wsdl:part element="tns:getLocationDetailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLocationResponse">
+    <wsdl:part element="tns:deleteLocationResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLocationsResponse">
+    <wsdl:part element="tns:getLocationsResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCountryList">
+    <wsdl:part element="tns:getCountryList" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveLocationResponse">
+    <wsdl:part element="tns:saveLocationResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLocations">
+    <wsdl:part element="tns:getLocations" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveLocation">
+    <wsdl:part element="tns:saveLocation" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="LocationWebService">
+    <wsdl:operation name="getLocationDetail">
+      <wsdl:input message="tns:getLocationDetail" name="getLocationDetail">
+    </wsdl:input>
+      <wsdl:output message="tns:getLocationDetailResponse" name="getLocationDetailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLocation">
+      <wsdl:input message="tns:deleteLocation" name="deleteLocation">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteLocationResponse" name="deleteLocationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateLocation">
+      <wsdl:input message="tns:updateLocation" name="updateLocation">
+    </wsdl:input>
+      <wsdl:output message="tns:updateLocationResponse" name="updateLocationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <wsdl:input message="tns:getCountryList" name="getCountryList">
+    </wsdl:input>
+      <wsdl:output message="tns:getCountryListResponse" name="getCountryListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <wsdl:input message="tns:getLocations" name="getLocations">
+    </wsdl:input>
+      <wsdl:output message="tns:getLocationsResponse" name="getLocationsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveLocation">
+      <wsdl:input message="tns:saveLocation" name="saveLocation">
+    </wsdl:input>
+      <wsdl:output message="tns:saveLocationResponse" name="saveLocationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="locationWebServiceImplSoapBinding" type="tns:LocationWebService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getLocationDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getLocationDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLocationDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLocation">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteLocation">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLocationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateLocation">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateLocation">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateLocationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCountryList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCountryList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCountryListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getLocations">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLocationsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveLocation">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveLocation">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveLocationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="locationWebServiceImpl">
+    <wsdl:port binding="tns:locationWebServiceImplSoapBinding" name="LocationWebServiceImplPort">
+      <soap:address location="http://localhost:8090/LocWebService/LocationService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
