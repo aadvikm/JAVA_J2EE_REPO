@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Location Page</title>
+<link rel="stylesheet" type="text/css" href="./resources/css/bootstrap.min.css">
+<script type='text/javascript' src='./resources/js/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='./resources/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='./resources/js/underscore.js'></script>
+<script type='text/javascript' src='./resources/js/deptpage.js'></script>
+<script id="deptDetailTempl" type="text/template">
+<form class='form-vertical'>
+            <div class="form-row">
+			<legend style="text-align:left"><h5>Department Details</h5></legend>
+			</div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+				<label for="deptId">Department Id:</label>
+				<input type="input" class="form-control" id="deptId" placeholder="Enter Department Id" value="<%= deptDetail.deptId %>" />
+				
+				</div>
+				<div class="form-group col-md-6">
+				<label for="deptName">Department Name:</label>
+				<input type="input" class="form-control" id="deptName" placeholder="Enter Department Name" value="<%= deptDetail.deptName %>">
+				</div>
+			</div>
+			<div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="mgrId">Manager :</label>
+					<select class="form-control" id="mgrId">
+						<option value=''></option>
+					  <%_.each(deptDetail.mgrList, function(dept) { 
+					  if(dept.mgrId == deptDetail.mgrId){
+					  %>
+					  <option value='<%= dept.mgrId %>' selected><%= dept.mgrName %></option>
+					  <%}
+					  else{%>
+					  <option value='<%= dept.mgrId %>'><%= dept.mgrName %></option>
+					 <% }})%>
+					</select>
+				</div>
+                <div class="form-group col-md-6">
+                    <label for="locId">Location :</label>
+					<select class="form-control" id="locId">
+					<option value=''></option>
+					  <%_.each(deptDetail.locList, function(dept) {
+					  if(dept.locId == deptDetail.locId){%>
+					  
+					  <option value='<%= dept.locId%>' selected><%= dept.city %></option>
+					  
+					  <%}else{%>
+					  <option value='<%= dept.locId %>'><%= dept.city %></option>
+					  <%}})%>
+					</select>
+				</div>
+            </div>
+			<div class='form-row'> 
+			<div class='col-md-12' style='text-align:right'>
+<button id="updateBtn" type="button"  class="btn btn-default">Update</button>
+</div>
+</div>		
+</form>
+</script>
+<script id="createDeptDetailTemp" type="text/template">
+	<form class='form-vertical'>
+            <div class="form-row">
+			<legend style="text-align:left"><h5>New Department Details</h5></legend>
+			</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="deptName">Department Name:</label>
+				<input type="input" class="form-control" id="deptName" placeholder="Enter Department Name" value=" ">
+			</div>
+		</div>
+			<div class="form-row ">
+				<div class="form-group col-md-6">
+                    <label for="mgrId">Manager :</label>
+					<select class="form-control" id="mgrId">
+					<option value=''></option>
+					  <%_.each(createDeptDetail.mgrList, function(mgr) { 
+					 %>
+					  <option value='<%= mgr.mgrId%>'><%= mgr.mgrName %></option>
+					 <% })%>
+					</select>
+				</div>
+                <div class="form-group col-md-6">
+                    <label for="locId">Location  :</label>
+					<select class="form-control" id="locId">
+					<option value=''></option>
+					  <%_.each(createDeptDetail.locList, function(loc) { 
+					 %>
+					  <option value='<%= loc.locId%>'><%= loc.city%></option>
+					 <% })%>
+					</select>
+				</div>
+            </div>
+			<div class='form-row'> 
+			<div class='col-md-12' style='text-align:right'>
+<button id="saveBtn" type="button"  class="btn btn-default">Save Details</button>
+</div>
+</div>	
+</form>
+</script>
+<script id="errMsgTempl" type="text/template">
+	<div class="alert alert-danger">
+		 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Error!</strong> <%= msg %>
+	</div>
+</script>
+<script id="infoMsgTempl" type="text/template">
+	<div class="alert alert-success">
+		 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Success!</strong> <%= msg %>
+	</div>
+</script>
+</head>
+<body onload='getDepartments()'>
+<form id='deptPage' name='deptPage'>
+<div class="container-fluid text-center"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<img src='./resources/images/deptimg.jpg' class='img-rounded float-center'
+						width='999.25px' height='150px'>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+<div class="container-fluid"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+	
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<div class='table'>
+
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class="form-group col-md-3" >
+    <label for="departments">Departments :</label>
+    <select class="form-control" id="departments" onchange ='getDeptDetail(this)'>
+      <option></option>
+      <option>Admin</option>
+      <option>Marketing</option>
+    </select>
+</div>
+<div class="form-group col-md-3" >
+   <button id="createBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="createNewDept()">Create New Department</button>
+</div>
+<div class="form-group col-md-3" >
+   <button id="deleteBtn" type="button"  class="btn btn-default" style="margin-top: 30px; margin-left: 10px;" onClick="deleteDepartment()">Delete Dept Detail</button>
+</div>
+
+</div>
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class='col-md-12' id='msgDiv'>
+<!-- Msg Template Content will go in here... -->
+</div>
+</div>
+<div class='row' style='margin-left: 0px;margin-right: 0px;'>
+<div class='col-md-12' id='pageContainer'>
+<!-- Template Content will go in here... -->
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+<div class="container-fluid text-center"> 
+<div class='row content'>
+<div class="col-md-2 ">
+</div>
+<div class="col-md-8 " style="padding-left: 0px;padding-right: 0px;">
+<img src='./resources/images/deptimg_footer.jpg' class='img-rounded float-center' width='999.25px' height='50px'>
+</div>
+<div class="col-md-2 ">
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
