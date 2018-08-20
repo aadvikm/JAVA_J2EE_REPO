@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservice.tutorial.webservice.apache.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="employeeWebServiceImpl" targetNamespace="http://webservice.tutorial.webservice.apache.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice.tutorial.webservice.apache.com/" elementFormDefault="unqualified" targetNamespace="http://webservice.tutorial.webservice.apache.com/" version="1.0">
+
+  <xs:element name="deleteEmployee" type="tns:deleteEmployee"/>
+
+  <xs:element name="deleteEmployeeResponse" type="tns:deleteEmployeeResponse"/>
+
+  <xs:element name="getDeptList" type="tns:getDeptList"/>
+
+  <xs:element name="getDeptListResponse" type="tns:getDeptListResponse"/>
+
+  <xs:element name="getEmployeeDetail" type="tns:getEmployeeDetail"/>
+
+  <xs:element name="getEmployeeDetailResponse" type="tns:getEmployeeDetailResponse"/>
+
+  <xs:element name="getEmployees" type="tns:getEmployees"/>
+
+  <xs:element name="getEmployeesResponse" type="tns:getEmployeesResponse"/>
+
+  <xs:element name="getManagerList" type="tns:getManagerList"/>
+
+  <xs:element name="getManagerListResponse" type="tns:getManagerListResponse"/>
+
+  <xs:element name="saveEmployee" type="tns:saveEmployee"/>
+
+  <xs:element name="saveEmployeeResponse" type="tns:saveEmployeeResponse"/>
+
+  <xs:element name="updateEmployee" type="tns:updateEmployee"/>
+
+  <xs:element name="updateEmployeeResponse" type="tns:updateEmployeeResponse"/>
+
+  <xs:complexType name="getEmployeeDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="employeeInputData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="empId" type="xs:long"/>
+      <xs:element minOccurs="0" name="employeeDetail" type="tns:employeeDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="employeeDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="deptId" type="xs:long"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="deptList" nillable="true" type="tns:department"/>
+      <xs:element minOccurs="0" name="empId" type="xs:long"/>
+      <xs:element minOccurs="0" name="firstName" type="xs:string"/>
+      <xs:element minOccurs="0" name="hireDate" type="xs:string"/>
+      <xs:element minOccurs="0" name="lastName" type="xs:string"/>
+      <xs:element minOccurs="0" name="managerId" type="xs:long"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="managerList" nillable="true" type="tns:manager"/>
+      <xs:element minOccurs="0" name="salary" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="department">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="deptId" type="xs:long"/>
+      <xs:element minOccurs="0" name="deptName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="manager">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="managerId" type="xs:long"/>
+      <xs:element minOccurs="0" name="managerName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEmployeeDetailResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="employeeOutputData">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="deptList" nillable="true" type="tns:department"/>
+      <xs:element minOccurs="0" name="employeeDetail" type="tns:employeeDetail"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="employeeDetailList" nillable="true" type="tns:employeeDetail"/>
+      <xs:element minOccurs="0" name="errorMessage" type="xs:string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="managerList" nillable="true" type="tns:manager"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saveEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="saveEmployeeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateEmployeeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDeptList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDeptListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteEmployee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteEmployeeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getManagerList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getManagerListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEmployees">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:employeeInputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEmployeesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:employeeOutputData"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="saveEmployee">
+    <wsdl:part element="tns:saveEmployee" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployeeDetailResponse">
+    <wsdl:part element="tns:getEmployeeDetailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployees">
+    <wsdl:part element="tns:getEmployees" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployeeDetail">
+    <wsdl:part element="tns:getEmployeeDetail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveEmployeeResponse">
+    <wsdl:part element="tns:saveEmployeeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateEmployee">
+    <wsdl:part element="tns:updateEmployee" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getManagerListResponse">
+    <wsdl:part element="tns:getManagerListResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDeptList">
+    <wsdl:part element="tns:getDeptList" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteEmployeeResponse">
+    <wsdl:part element="tns:deleteEmployeeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateEmployeeResponse">
+    <wsdl:part element="tns:updateEmployeeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDeptListResponse">
+    <wsdl:part element="tns:getDeptListResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteEmployee">
+    <wsdl:part element="tns:deleteEmployee" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getManagerList">
+    <wsdl:part element="tns:getManagerList" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmployeesResponse">
+    <wsdl:part element="tns:getEmployeesResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EmployeeWebService">
+    <wsdl:operation name="getEmployeeDetail">
+      <wsdl:input message="tns:getEmployeeDetail" name="getEmployeeDetail">
+    </wsdl:input>
+      <wsdl:output message="tns:getEmployeeDetailResponse" name="getEmployeeDetailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveEmployee">
+      <wsdl:input message="tns:saveEmployee" name="saveEmployee">
+    </wsdl:input>
+      <wsdl:output message="tns:saveEmployeeResponse" name="saveEmployeeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEmployee">
+      <wsdl:input message="tns:updateEmployee" name="updateEmployee">
+    </wsdl:input>
+      <wsdl:output message="tns:updateEmployeeResponse" name="updateEmployeeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeptList">
+      <wsdl:input message="tns:getDeptList" name="getDeptList">
+    </wsdl:input>
+      <wsdl:output message="tns:getDeptListResponse" name="getDeptListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployee">
+      <wsdl:input message="tns:deleteEmployee" name="deleteEmployee">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteEmployeeResponse" name="deleteEmployeeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getManagerList">
+      <wsdl:input message="tns:getManagerList" name="getManagerList">
+    </wsdl:input>
+      <wsdl:output message="tns:getManagerListResponse" name="getManagerListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmployees">
+      <wsdl:input message="tns:getEmployees" name="getEmployees">
+    </wsdl:input>
+      <wsdl:output message="tns:getEmployeesResponse" name="getEmployeesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="employeeWebServiceImplSoapBinding" type="tns:EmployeeWebService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getEmployeeDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getEmployeeDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getEmployeeDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveEmployee">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveEmployee">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveEmployeeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateEmployee">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateEmployee">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateEmployeeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeptList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDeptList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDeptListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteEmployee">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteEmployee">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteEmployeeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getManagerList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getManagerList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getManagerListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmployees">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getEmployees">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getEmployeesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="employeeWebServiceImpl">
+    <wsdl:port binding="tns:employeeWebServiceImplSoapBinding" name="EmployeeWebServiceImplPort">
+      <soap:address location="http://localhost:8090/employeewebservice/EmployeeService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
