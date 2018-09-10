@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="showLocationPage" class="com.struts2practice.action.LoginAction">
+			<result name="success">resources/views/locPage.html</result>
+		</action>
+		<action name="getLocations" method="getLocations" class="com.struts2practice.action.LocationAction"/>
+		<action name="saveLocation" method="saveLocation" class="com.struts2practice.action.LocationAction"/>
+		<action name="updateLocation" method="saveLocation" class="com.struts2practice.action.LocationAction"/>
+		<action name="deleteLocation" method="saveLocation" class="com.struts2practice.action.LocationAction"/>
+		<action name="getLocationDetail" method="saveLocation" class="com.struts2practice.action.LocationAction"/>
+	</package>
+</struts>
