@@ -37,8 +37,8 @@
 		destroy-method="close">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<property name="username" value="hr" />
-		<property name="password" value="hr" />
+		<property name="username" value="elibrary" />
+		<property name="password" value="elibrary" />
 	</bean>
 
 	<!-- Hibernate 3 XML SessionFactory Bean definition-->
@@ -84,9 +84,9 @@
 	<bean id="elibraryServiceImpl" class="com.apache.elibrary.webservice.service.ElibraryServiceImpl">
 		<property name="elibraryDao" ref="elibraryDao" />
 	</bean>
-	<bean id="elibraryWebServiceImpl" class="com.apache.elibrary.webservice.webservice.ElibraryWebServiceImpl">
+	<!--  <bean id="elibraryWebServiceImpl" class="com.apache.elibrary.webservice.webservice.ElibraryWebServiceImpl">
 		<property name="elibraryService" ref="elibraryServiceImpl" />
-	</bean>
-  	<jaxws:endpoint id="elibraryWebService" implementor="#elibraryWebServiceImpl" address="/ElibraryService" />
+	</bean>-->
+  	<jaxws:endpoint id="elibraryService" implementor="#elibraryServiceImpl" address="/ElibraryService" />
 
 </beans>

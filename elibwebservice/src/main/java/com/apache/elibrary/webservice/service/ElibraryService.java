@@ -2,6 +2,8 @@ package com.apache.elibrary.webservice.service;
 
 import java.util.ArrayList;
 
+import javax.jws.WebService;
+
 import com.apache.elibrary.webservice.domain.AdminDetail;
 import com.apache.elibrary.webservice.domain.AdminEntity;
 import com.apache.elibrary.webservice.domain.BookDetail;
@@ -10,6 +12,7 @@ import com.apache.elibrary.webservice.domain.LibrarianDetail;
 import com.apache.elibrary.webservice.domain.ViewIssuedBook;
 import com.apache.elibrary.webservice.exception.ElibraryException;
 
+@WebService
 public interface ElibraryService {
 	
 	

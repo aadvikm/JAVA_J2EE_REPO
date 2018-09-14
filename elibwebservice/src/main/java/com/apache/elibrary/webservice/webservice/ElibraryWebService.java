@@ -12,7 +12,7 @@ import com.apache.elibrary.webservice.domain.LibrarianDetail;
 import com.apache.elibrary.webservice.domain.ViewIssuedBook;
 import com.apache.elibrary.webservice.exception.ElibraryException;
 
-@WebService
+
 public interface ElibraryWebService {
 /**Admin Crud**/
 	

@@ -1,0 +1,928 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.webservice.elibrary.apache.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="elibraryServiceImpl" targetNamespace="http://service.webservice.elibrary.apache.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.webservice.elibrary.apache.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.webservice.elibrary.apache.com/">
+  <xs:element name="authenticateAdmin" type="tns:authenticateAdmin"/>
+  <xs:element name="authenticateAdminResponse" type="tns:authenticateAdminResponse"/>
+  <xs:element name="authenticateLibrarian" type="tns:authenticateLibrarian"/>
+  <xs:element name="authenticateLibrarianResponse" type="tns:authenticateLibrarianResponse"/>
+  <xs:element name="deleteAdmin" type="tns:deleteAdmin"/>
+  <xs:element name="deleteAdminResponse" type="tns:deleteAdminResponse"/>
+  <xs:element name="deleteBook" type="tns:deleteBook"/>
+  <xs:element name="deleteBookResponse" type="tns:deleteBookResponse"/>
+  <xs:element name="deleteLibrarian" type="tns:deleteLibrarian"/>
+  <xs:element name="deleteLibrarianResponse" type="tns:deleteLibrarianResponse"/>
+  <xs:element name="getAdmin" type="tns:getAdmin"/>
+  <xs:element name="getAdminResponse" type="tns:getAdminResponse"/>
+  <xs:element name="getAllBooks" type="tns:getAllBooks"/>
+  <xs:element name="getAllBooksResponse" type="tns:getAllBooksResponse"/>
+  <xs:element name="getAllIssuedBooks" type="tns:getAllIssuedBooks"/>
+  <xs:element name="getAllIssuedBooksResponse" type="tns:getAllIssuedBooksResponse"/>
+  <xs:element name="getBook" type="tns:getBook"/>
+  <xs:element name="getBookAndStudentList" type="tns:getBookAndStudentList"/>
+  <xs:element name="getBookAndStudentListResponse" type="tns:getBookAndStudentListResponse"/>
+  <xs:element name="getBookResponse" type="tns:getBookResponse"/>
+  <xs:element name="getLibrarian" type="tns:getLibrarian"/>
+  <xs:element name="getLibrarianResponse" type="tns:getLibrarianResponse"/>
+  <xs:element name="getLibrarians" type="tns:getLibrarians"/>
+  <xs:element name="getLibrariansResponse" type="tns:getLibrariansResponse"/>
+  <xs:element name="returnBookFormDetail" type="tns:returnBookFormDetail"/>
+  <xs:element name="returnBookFormDetailResponse" type="tns:returnBookFormDetailResponse"/>
+  <xs:element name="returningBook" type="tns:returningBook"/>
+  <xs:element name="returningBookResponse" type="tns:returningBookResponse"/>
+  <xs:element name="saveAdmin" type="tns:saveAdmin"/>
+  <xs:element name="saveAdminResponse" type="tns:saveAdminResponse"/>
+  <xs:element name="saveBook" type="tns:saveBook"/>
+  <xs:element name="saveBookResponse" type="tns:saveBookResponse"/>
+  <xs:element name="saveLibrarian" type="tns:saveLibrarian"/>
+  <xs:element name="saveLibrarianResponse" type="tns:saveLibrarianResponse"/>
+  <xs:element name="saveStudentBookDetail" type="tns:saveStudentBookDetail"/>
+  <xs:element name="saveStudentBookDetailResponse" type="tns:saveStudentBookDetailResponse"/>
+  <xs:element name="updateAdmin" type="tns:updateAdmin"/>
+  <xs:element name="updateAdminResponse" type="tns:updateAdminResponse"/>
+  <xs:element name="updateBook" type="tns:updateBook"/>
+  <xs:element name="updateBookResponse" type="tns:updateBookResponse"/>
+  <xs:element name="updateLibrarian" type="tns:updateLibrarian"/>
+  <xs:element name="updateLibrarianResponse" type="tns:updateLibrarianResponse"/>
+  <xs:complexType name="getBookAndStudentList">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getBookAndStudentListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:issueBookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="issueBookDetail">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="bookDetail" nillable="true" type="tns:bookDetail"/>
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="studentDetail" nillable="true" type="tns:studentDetail"/>
+      <xs:element minOccurs="0" name="studentName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bookDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="authorName" type="xs:string"/>
+      <xs:element minOccurs="0" name="bookId" type="xs:long"/>
+      <xs:element minOccurs="0" name="bookName" type="xs:string"/>
+      <xs:element minOccurs="0" name="callNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="issued" type="xs:long"/>
+      <xs:element minOccurs="0" name="publisher" type="xs:string"/>
+      <xs:element minOccurs="0" name="quantity" type="xs:long"/>
+      <xs:element minOccurs="0" name="remaining" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="studentDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="emailId" type="xs:string"/>
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="password" type="xs:string"/>
+      <xs:element minOccurs="0" name="studentId" type="xs:long"/>
+      <xs:element minOccurs="0" name="studentUserId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:bookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveBookResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveLibrarian">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:librarianDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="librarianDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="emailId" type="xs:string"/>
+      <xs:element minOccurs="0" name="librarianId" type="xs:long"/>
+      <xs:element minOccurs="0" name="librarianUserId" type="xs:string"/>
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="password" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveLibrarianResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:librarianDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:bookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateBookResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAdmin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:adminDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="adminDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adminId" type="xs:long"/>
+      <xs:element minOccurs="0" name="adminUserId" type="xs:string"/>
+      <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="emailId" type="xs:string"/>
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="password" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateAdminResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:adminEntity"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="adminEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adminId" type="xs:long"/>
+      <xs:element minOccurs="0" name="adminUserId" type="xs:string"/>
+      <xs:element minOccurs="0" name="dateOfBirth" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="emailId" type="xs:string"/>
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="password" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBookResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:bookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateLibrarian">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:librarianDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateLibrarianResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:librarianDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteLibrarian">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteLibrarianResponse">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="saveStudentBookDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveStudentBookDetailResponse">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getLibrarian">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLibrarianResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:librarianDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAdmin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAdminResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:adminDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveAdmin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:adminDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="saveAdminResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:adminEntity"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="authenticateAdmin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="authenticateAdminResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLibrarians">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getLibrariansResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:librarianDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="returnBookFormDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="returnBookFormDetailResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:viewIssuedBook"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="viewIssuedBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bookId" type="xs:long"/>
+      <xs:element minOccurs="0" name="callNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="issueDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="mobileNo" type="xs:string"/>
+      <xs:element minOccurs="0" name="returnStatus" type="xs:string"/>
+      <xs:element minOccurs="0" name="studentBookId" type="xs:long"/>
+      <xs:element minOccurs="0" name="studentId" type="xs:long"/>
+      <xs:element minOccurs="0" name="studentName" type="xs:string"/>
+      <xs:element minOccurs="0" name="studentUserId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllIssuedBooks">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getAllIssuedBooksResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:viewIssuedBook"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="authenticateLibrarian">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="authenticateLibrarianResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAdmin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteAdminResponse">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="deleteBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteBookResponse">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getAllBooks">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getAllBooksResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:bookDetail"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="returningBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="returningBookResponse">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="ElibraryException" type="tns:ElibraryException"/>
+  <xs:complexType name="ElibraryException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getBookAndStudentListResponse">
+    <wsdl:part element="tns:getBookAndStudentListResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBookAndStudentList">
+    <wsdl:part element="tns:getBookAndStudentList" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveAdminResponse">
+    <wsdl:part element="tns:saveAdminResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLibrarianResponse">
+    <wsdl:part element="tns:deleteLibrarianResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveBook">
+    <wsdl:part element="tns:saveBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveLibrarian">
+    <wsdl:part element="tns:saveLibrarian" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ElibraryException">
+    <wsdl:part element="tns:ElibraryException" name="ElibraryException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAdminResponse">
+    <wsdl:part element="tns:deleteAdminResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateAdmin">
+    <wsdl:part element="tns:updateAdmin" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBook">
+    <wsdl:part element="tns:getBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returnBookFormDetailResponse">
+    <wsdl:part element="tns:returnBookFormDetailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBookResponse">
+    <wsdl:part element="tns:getBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLibrarian">
+    <wsdl:part element="tns:deleteLibrarian" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLibrarian">
+    <wsdl:part element="tns:getLibrarian" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAdmin">
+    <wsdl:part element="tns:getAdmin" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returningBookResponse">
+    <wsdl:part element="tns:returningBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllIssuedBooksResponse">
+    <wsdl:part element="tns:getAllIssuedBooksResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="authenticateAdmin">
+    <wsdl:part element="tns:authenticateAdmin" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveBookResponse">
+    <wsdl:part element="tns:saveBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateBookResponse">
+    <wsdl:part element="tns:updateBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returnBookFormDetail">
+    <wsdl:part element="tns:returnBookFormDetail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="authenticateLibrarian">
+    <wsdl:part element="tns:authenticateLibrarian" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returningBook">
+    <wsdl:part element="tns:returningBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateBook">
+    <wsdl:part element="tns:updateBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateAdminResponse">
+    <wsdl:part element="tns:updateAdminResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveLibrarianResponse">
+    <wsdl:part element="tns:saveLibrarianResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateLibrarian">
+    <wsdl:part element="tns:updateLibrarian" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveStudentBookDetailResponse">
+    <wsdl:part element="tns:saveStudentBookDetailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="authenticateLibrarianResponse">
+    <wsdl:part element="tns:authenticateLibrarianResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveStudentBookDetail">
+    <wsdl:part element="tns:saveStudentBookDetail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAdminResponse">
+    <wsdl:part element="tns:getAdminResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllBooksResponse">
+    <wsdl:part element="tns:getAllBooksResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="saveAdmin">
+    <wsdl:part element="tns:saveAdmin" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="authenticateAdminResponse">
+    <wsdl:part element="tns:authenticateAdminResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLibrariansResponse">
+    <wsdl:part element="tns:getLibrariansResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLibrarians">
+    <wsdl:part element="tns:getLibrarians" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllIssuedBooks">
+    <wsdl:part element="tns:getAllIssuedBooks" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLibrarianResponse">
+    <wsdl:part element="tns:getLibrarianResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteBookResponse">
+    <wsdl:part element="tns:deleteBookResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteAdmin">
+    <wsdl:part element="tns:deleteAdmin" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateLibrarianResponse">
+    <wsdl:part element="tns:updateLibrarianResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteBook">
+    <wsdl:part element="tns:deleteBook" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllBooks">
+    <wsdl:part element="tns:getAllBooks" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ElibraryService">
+    <wsdl:operation name="getBookAndStudentList">
+      <wsdl:input message="tns:getBookAndStudentList" name="getBookAndStudentList">
+    </wsdl:input>
+      <wsdl:output message="tns:getBookAndStudentListResponse" name="getBookAndStudentListResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBook">
+      <wsdl:input message="tns:saveBook" name="saveBook">
+    </wsdl:input>
+      <wsdl:output message="tns:saveBookResponse" name="saveBookResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveLibrarian">
+      <wsdl:input message="tns:saveLibrarian" name="saveLibrarian">
+    </wsdl:input>
+      <wsdl:output message="tns:saveLibrarianResponse" name="saveLibrarianResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateBook">
+      <wsdl:input message="tns:updateBook" name="updateBook">
+    </wsdl:input>
+      <wsdl:output message="tns:updateBookResponse" name="updateBookResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateAdmin">
+      <wsdl:input message="tns:updateAdmin" name="updateAdmin">
+    </wsdl:input>
+      <wsdl:output message="tns:updateAdminResponse" name="updateAdminResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBook">
+      <wsdl:input message="tns:getBook" name="getBook">
+    </wsdl:input>
+      <wsdl:output message="tns:getBookResponse" name="getBookResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateLibrarian">
+      <wsdl:input message="tns:updateLibrarian" name="updateLibrarian">
+    </wsdl:input>
+      <wsdl:output message="tns:updateLibrarianResponse" name="updateLibrarianResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLibrarian">
+      <wsdl:input message="tns:deleteLibrarian" name="deleteLibrarian">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteLibrarianResponse" name="deleteLibrarianResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveStudentBookDetail">
+      <wsdl:input message="tns:saveStudentBookDetail" name="saveStudentBookDetail">
+    </wsdl:input>
+      <wsdl:output message="tns:saveStudentBookDetailResponse" name="saveStudentBookDetailResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getLibrarian">
+      <wsdl:input message="tns:getLibrarian" name="getLibrarian">
+    </wsdl:input>
+      <wsdl:output message="tns:getLibrarianResponse" name="getLibrarianResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAdmin">
+      <wsdl:input message="tns:getAdmin" name="getAdmin">
+    </wsdl:input>
+      <wsdl:output message="tns:getAdminResponse" name="getAdminResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveAdmin">
+      <wsdl:input message="tns:saveAdmin" name="saveAdmin">
+    </wsdl:input>
+      <wsdl:output message="tns:saveAdminResponse" name="saveAdminResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="authenticateAdmin">
+      <wsdl:input message="tns:authenticateAdmin" name="authenticateAdmin">
+    </wsdl:input>
+      <wsdl:output message="tns:authenticateAdminResponse" name="authenticateAdminResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getLibrarians">
+      <wsdl:input message="tns:getLibrarians" name="getLibrarians">
+    </wsdl:input>
+      <wsdl:output message="tns:getLibrariansResponse" name="getLibrariansResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="returnBookFormDetail">
+      <wsdl:input message="tns:returnBookFormDetail" name="returnBookFormDetail">
+    </wsdl:input>
+      <wsdl:output message="tns:returnBookFormDetailResponse" name="returnBookFormDetailResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllIssuedBooks">
+      <wsdl:input message="tns:getAllIssuedBooks" name="getAllIssuedBooks">
+    </wsdl:input>
+      <wsdl:output message="tns:getAllIssuedBooksResponse" name="getAllIssuedBooksResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="authenticateLibrarian">
+      <wsdl:input message="tns:authenticateLibrarian" name="authenticateLibrarian">
+    </wsdl:input>
+      <wsdl:output message="tns:authenticateLibrarianResponse" name="authenticateLibrarianResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAdmin">
+      <wsdl:input message="tns:deleteAdmin" name="deleteAdmin">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteAdminResponse" name="deleteAdminResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBook">
+      <wsdl:input message="tns:deleteBook" name="deleteBook">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteBookResponse" name="deleteBookResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllBooks">
+      <wsdl:input message="tns:getAllBooks" name="getAllBooks">
+    </wsdl:input>
+      <wsdl:output message="tns:getAllBooksResponse" name="getAllBooksResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="returningBook">
+      <wsdl:input message="tns:returningBook" name="returningBook">
+    </wsdl:input>
+      <wsdl:output message="tns:returningBookResponse" name="returningBookResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:ElibraryException" name="ElibraryException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="elibraryServiceImplSoapBinding" type="tns:ElibraryService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBookAndStudentList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBookAndStudentList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBookAndStudentListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveLibrarian">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveLibrarian">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveLibrarianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateAdmin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateAdmin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateAdminResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateLibrarian">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updateLibrarian">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateLibrarianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLibrarian">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteLibrarian">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLibrarianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveStudentBookDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveStudentBookDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveStudentBookDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getLibrarian">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getLibrarian">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLibrarianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAdmin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAdmin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAdminResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="saveAdmin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saveAdmin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveAdminResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="authenticateAdmin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="authenticateAdmin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="authenticateAdminResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getLibrarians">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getLibrarians">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLibrariansResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="returnBookFormDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="returnBookFormDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="returnBookFormDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllIssuedBooks">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllIssuedBooks">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllIssuedBooksResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="authenticateLibrarian">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="authenticateLibrarian">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="authenticateLibrarianResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAdmin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteAdmin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteAdminResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllBooks">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllBooks">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllBooksResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="returningBook">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="returningBook">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="returningBookResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="ElibraryException">
+        <soap:fault name="ElibraryException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="elibraryServiceImpl">
+    <wsdl:port binding="tns:elibraryServiceImplSoapBinding" name="ElibraryServiceImplPort">
+      <soap:address location="http://localhost:8090/elibwebservice/ElibraryService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

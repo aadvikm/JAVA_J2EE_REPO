@@ -3,6 +3,8 @@ package com.apache.elibrary.webservice.service;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.jws.WebService;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,7 @@ import com.apache.elibrary.webservice.domain.StudentBookEntity;
 import com.apache.elibrary.webservice.domain.ViewIssuedBook;
 import com.apache.elibrary.webservice.exception.ElibraryException;
 
+@WebService(endpointInterface = "com.apache.elibrary.webservice.service.ElibraryService", serviceName = "elibraryServiceImpl")
 public  class ElibraryServiceImpl implements ElibraryService {
 
 	private static Logger LOG = Logger.getLogger(ElibraryServiceImpl.class);

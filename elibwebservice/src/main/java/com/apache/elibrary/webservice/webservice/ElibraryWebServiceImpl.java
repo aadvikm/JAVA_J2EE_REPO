@@ -12,7 +12,6 @@ import com.apache.elibrary.webservice.exception.ElibraryException;
 import com.apache.elibrary.webservice.service.ElibraryService;
 
 
-@WebService(endpointInterface = "com.apache.elibrary.webservice.webservice.ElibraryWebService", serviceName = "elibraryWebServiceImpl")
 public class ElibraryWebServiceImpl implements ElibraryWebService{
 
 	public ElibraryWebServiceImpl() {
